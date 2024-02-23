@@ -9,8 +9,10 @@
             <a href="">Portfolio</a>
         </ul>
 
-        <div class="burger-button">
-            <img src="./../../../../../assets/img/burger_menu.svg" alt="">
-        </div>
+        <button mat-button [matMenuTriggerFor]="menu" class="burger-button">Menu</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
     </nav>
 </section>

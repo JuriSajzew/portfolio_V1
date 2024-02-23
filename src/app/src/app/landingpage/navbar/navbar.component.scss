@@ -1,3 +1,5 @@
+@import './../../../../../font.style.scss';
+
 section {
     width: 100vw;
     max-width: 100%;
@@ -24,7 +26,6 @@ section {
 }
 
 .nav-menu {
-    border: 1px solid greenyellow;
     width: 324px;
     height: 32px;
     display: flex;
