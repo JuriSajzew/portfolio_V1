@@ -47,11 +47,14 @@ section {
         text-align: left;
         color: #FFFFFF;
         text-decoration: none;
+        border-bottom: 4px solid #141D2F;
 
         &:hover {
             cursor: pointer;
             animation-timing-function: linear;
             animation-duration: 200ms;
+            color: #00BEE8;
+            border-bottom:4px solid #4B47FF ;
 
         }
     }
@@ -60,7 +63,6 @@ section {
 .burger-button {
     width: 30px;
     height: 27.72px;
-    border: 1px dotted greenyellow;
 }
 
 .burger-button {
