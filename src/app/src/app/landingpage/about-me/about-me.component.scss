@@ -1,0 +1,134 @@
+@media (min-width:992px) {
+    section {
+        width: 100vw;
+        max-width: 100%;
+        height: 100vh;
+        background-color: #141d2f;
+    }
+
+    .about-me-header {
+        width: 100vw;
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .about-me-vector-right {
+        position: absolute;
+        right: 0;
+        top: 86vh;
+    }
+
+    .about-me-contain {
+        width: 50vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -160px;
+    }
+
+    .about-me-title {
+        width: 454px;
+        height: 108px;
+
+        h2 {
+            font-family: Poppins;
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 108px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #FFFFFF;
+        }
+    }
+
+    .about-me-text-contain {
+        width: 454px;
+        height: 336px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-text {
+        width: 454px;
+        height: 114px;
+
+        span {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #FFFFFF;
+        }
+    }
+
+    .frame6 {
+        width: 444px;
+        height: 76px;
+        gap: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .frame6-img {
+        width: 50px;
+        height: 50px;
+        padding: 0px 2px 24px 2px;
+        gap: 10px;
+    }
+
+    .frame6-text {
+        width: 359px;
+        height: 76px;
+
+        span {
+            //styleName: Style 1/body;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #FFFFFF;
+        }
+    }
+
+    .profile-contain {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50vw;
+        height: 80vh;
+    }
+
+    .contain-profile-img {
+        width: 453px;
+        height: 453px;
+        border: 4px solid #00BEE8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 50%;
+
+        img {
+            width: 406px;
+            height: 406px;
+        }
+
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {}
+
+@media (max-width:767px) {}

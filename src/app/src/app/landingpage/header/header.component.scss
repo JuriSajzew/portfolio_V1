@@ -5,7 +5,7 @@
     section {
         width: 100vw;
         max-width: 100%;
-        height: 100vh;
+        height: 103vh;
         padding-top: 184px;
     }
 
@@ -219,6 +219,7 @@
         height: 180px;
         gap: 80px;
         margin-right: 100px;
+        z-index: 1;
 
         span {
             transform: rotate(90deg);
