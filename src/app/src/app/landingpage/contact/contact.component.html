@@ -1,0 +1,43 @@
+<section>
+    <div class="heading-contain">
+        <div class="vector-contain">
+            <img src="./../../../../../assets/shadow/contact_vector.svg" alt="">
+        </div>
+        <div class="heading-text">
+            <h2>Contact</h2>
+        </div>
+    </div>
+    <div class="contact-header">
+        <div class="heading">
+            <div class="frame1">
+                <span>Got a problem to solve?</span>
+            </div>
+            <div class="frame2">
+                <span>
+                    Contact me through this form, I am interested in hearing from you, knowing your ideas and
+                    contributing to your projects with my work.
+                </span>
+            </div>
+            <div class="frame3">
+                <span>Need a Frontend developer?
+                    <a href="">Contact me!</a>
+                </span>
+            </div>
+
+        </div>
+        <div class="input-contain">
+            <form class="form-contain" #contactForm="ngForm">
+                <input [(ngModel)]="contactData.name" id="contactName" class="frame50" name="name"
+                    placeholder="Your name" type="text" required>
+                <input [(ngModel)]="contactData.email" id="contactEmail" class="frame50" name="email"
+                    placeholder="Your email" type="email" required
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                <textarea [(ngModel)]="contactData.message" class="frame51" name="message"
+                    placeholder="Your message" type="message" required></textarea>
+
+                <button (click)="onSubmit(contactForm)">Send mail :)</button>
+            </form>
+
+        </div>
+    </div>
+</section>

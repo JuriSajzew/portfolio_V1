@@ -1,0 +1,239 @@
+@media (min-width:992px) {
+    section {
+        width: 100vw;
+        max-width: 100%;
+        height: 115vh;
+        background-color: #141d2f;
+    }
+
+    .heading-contain {
+        width: 100%;
+        gap: 108px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+
+    .vector-contain {
+        width: 5%;
+        border: 1px dotted greenyellow;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .heading-text {
+        width: 376px;
+        height: 108px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: 1px solid white;
+
+        h2 {
+            font-family: Poppins;
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 108px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #ffffff;
+        }
+    }
+
+    .contact-header {
+        width: 100vw;
+        max-width: 100%;
+        height: 100vh;
+        border: 1px dotted white;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .heading {
+        width: 50vw;
+        height: 50vh;
+        border: 1px dotted yellow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 30px;
+        padding-left: 200px;
+        padding-right: 100px;
+    }
+
+    .frame1 {
+        width: 100%;
+        height: 38px;
+        border: 1px dotted khaki;
+
+        span {
+            font-family: Poppins;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #ffffff;
+        }
+    }
+
+    .frame2 {
+        width: 100%;
+        height: 57px;
+        border: 1px solid indianred;
+
+        span {
+            //styleName: Style 1/body;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #ffffff;
+        }
+    }
+
+    .frame3 {
+        width: 100%;
+        height: 19px;
+        border: 1px solid salmon;
+
+        span {
+            //styleName: Style 1/body;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #ffffff;
+
+        }
+
+        a {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #ffffff;
+        }
+    }
+
+
+    .input-contain {
+        width: 50vw;
+        height: 75vh;
+        border: 1px dotted yellowgreen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .example-container mat-form-field+mat-form-field {
+        margin-left: 8px;
+    }
+
+    .form-contain {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid wheat;
+        justify-content: center;
+        row-gap: 32px;
+    }
+
+    .frame50 {
+        width: 93%;
+        height: calc(50px - 25px);
+        border-radius: 10px;
+        background: #141D2F;
+        border: 1px solid #4B47FF;
+        display: grid;
+        gap: 10px;
+        padding: 15px 25px 15px 25px;
+        color: #ffffff;
+
+        &:hover {
+            border: 1px solid #00BEE8;
+        }
+
+
+        &::placeholder {
+            width: 88px;
+            height: 19px;
+            color: #ffffff;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+
+        &:focus {
+            color: #ffffff;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+    }
+
+    input:focus {
+        outline: none;
+
+    }
+
+
+
+    .frame51 {
+        width: 93%;
+        height: 202px;
+        display: grid;
+        gap: 10px;
+        border-radius: 10px;
+        background: #141D2F;
+        border: 1px solid #4B47FF;
+        padding: 15px 25px 15px 25px;
+
+        &:hover {
+            border: 1px solid #00BEE8;
+        }
+    }
+
+    .example-container {
+        width: 100%;
+    }
+
+    mat-form-field {
+        width: 100%;
+
+    }
+
+    mat-label {
+        color: #ffffff;
+    }
+
+    ::ng-deep.mat-focused {
+        background-color: #141d2f;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {}
+
+@media (max-width:767px) {}
