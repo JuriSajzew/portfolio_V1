@@ -23,6 +23,15 @@ section {
     border: 1px dotted greenyellow;
     width: 150px;
     height: 35.03px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    img {
+        width: 150px;
+        height: 57px;
+    }
 }
 
 .nav-menu {
@@ -54,7 +63,7 @@ section {
             animation-timing-function: linear;
             animation-duration: 200ms;
             color: #00BEE8;
-            border-bottom:4px solid #4B47FF ;
+            border-bottom: 4px solid #4B47FF;
 
         }
     }

@@ -27,17 +27,52 @@
         </div>
         <div class="input-contain">
             <form class="form-contain" #contactForm="ngForm">
-                <input [(ngModel)]="contactData.name" id="contactName" class="frame50" name="name"
-                    placeholder="Your name" type="text" required>
-                <input [(ngModel)]="contactData.email" id="contactEmail" class="frame50" name="email"
-                    placeholder="Your email" type="email" required
-                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-                <textarea [(ngModel)]="contactData.message" class="frame51" name="message"
-                    placeholder="Your message" type="message" required></textarea>
+                <div class="textarea-contain">
+                    <input #name="ngModel" minlength="2" [(ngModel)]="contactData.name" id="contactName" class="frame50"
+                        name="name" placeholder="Your name" type="text" required>
+                    @if (!name.valid && name.touched) {
+                    <span ngClass="warnText">Please enter a name</span>
+                    }
+                </div>
+                <div class="textarea-contain">
+                    <input #email="ngModel" [(ngModel)]="contactData.email" id="contactEmail" class="frame50"
+                        name="email" placeholder="Your email" type="email" required
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    @if (!email.valid && email.touched) {
+                    <span ngClass="warnText">Please enter a email</span>
+                    }
+                </div>
+                <div class="textarea-contain">
+                    <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" class="frame51"
+                        name="message" placeholder="Your message" type="message" required></textarea>
+                    @if (!message.valid && message.touched) {
+                    <span ngClass="warnText">Please enter a message</span>
+                    }
+                </div>
+                <div style="width: 100%;">
+                    <div class="example-section">
+                        <div class="checkbox-contain">
+                            <input type="checkbox" (click)="clickCheckbox()" class="checkbox">
+                        </div>
 
-                <button (click)="onSubmit(contactForm)">Send mail :)</button>
+                        <span>I've read the
+                            <a href="">privacy policy</a>
+                            and agree to the processing of my data as outlined.
+                        </span>
+                    </div>
+                    <span *ngIf="!setCheckbox" ngClass="warnText">Please accept the privacy policy.</span>
+                </div>
+                <div class="button-contain">
+                    <button class="sendMail-button-1" *ngIf="!setCheckbox"><span>Send mail :)</span></button>
+                    <button *ngIf="setCheckbox" class="sendMail-button" (click)="onSubmit(contactForm)">
+                        <span>Send mail :)</span>
+                    </button>
+                </div>
             </form>
-
         </div>
+    </div>
+
+    <div class="vector-contain-footer">
+        <img src="./../../../../../assets/shadow/contact_footer_vector.svg" alt="">
     </div>
 </section>
