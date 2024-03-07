@@ -1,0 +1,16 @@
+@mixin dFlex($jc: center, $ai: center, $g: 0px) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $g;
+}
+
+@mixin dGrid($gr: 0, $gc: 0) {
+    display: grid;
+    grid-row: $gr;
+    grid-column: $gc;
+}
+
+$breakpointDesktop: 992px;
+$breakpointTablet: 991px;
+$breakpointMobile: 767px;

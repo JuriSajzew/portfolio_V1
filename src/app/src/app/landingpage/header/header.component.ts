@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss', './header1.component.scss'],
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
   colorClass: string = 'button-header';

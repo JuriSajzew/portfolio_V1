@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
+import { BurgerMenuComponent } from '../burger-menu/burger-menu.component';
 
 
 @Component({
@@ -8,11 +9,16 @@ import { MatMenuModule } from '@angular/material/menu';
   standalone: true,
   imports: [
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    BurgerMenuComponent
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  isMenuOpen = false;
 
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }

@@ -3,16 +3,23 @@
         <div class="logo-contain">
             <img src="./../../../../../assets/img/logoSVG.svg" alt="">
         </div>
-        <ul class="nav-menu">
+        <li class="burger" (click)="toggleMenu()">
+            <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
+        </li>
+
+        <ul class="nav-menu" [class.is-open]="isMenuOpen">
             <a href="#aboutMe">About Me</a>
             <a href="#mySkills">Skills</a>
             <a href="#porfolio">Portfolio</a>
         </ul>
 
-        <button mat-button [matMenuTriggerFor]="menu" class="burger-button">Menu</button>
+
+
+        <!--<app-burger-menu></app-burger-menu>-->
+        <!--<button mat-button [matMenuTriggerFor]="menu" class="burger-button">Menu</button>
         <mat-menu #menu="matMenu">
             <button mat-menu-item>Item 1</button>
             <button mat-menu-item>Item 2</button>
-        </mat-menu>
+        </mat-menu>-->
     </nav>
 </section>

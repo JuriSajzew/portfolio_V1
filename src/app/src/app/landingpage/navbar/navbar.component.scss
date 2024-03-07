@@ -1,4 +1,5 @@
 @import './../../../../../font.style.scss';
+@import './../../../../../mixin.style.scss';
 
 section {
     width: 100vw;
@@ -17,10 +18,14 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 37px 100px 37px 100px;
+
+    @media (max-width:$breakpointMobile) {
+        padding: 37px 25px 37px 25px;
+        height: 43px;
+    }
 }
 
 .logo-contain {
-    border: 1px dotted greenyellow;
     width: 150px;
     height: 35.03px;
     display: flex;
@@ -31,6 +36,24 @@ section {
     img {
         width: 150px;
         height: 57px;
+    }
+}
+
+.burger {
+    display: none;
+
+    @media (max-width:$breakpointMobile) {
+        display: flex;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        gap: 14px;
+        justify-content: center;
+
+        .material-icons {
+            color: #FFFFFF;
+            font-size: 70px !important;
+        }
     }
 }
 
@@ -67,27 +90,21 @@ section {
 
         }
     }
-}
 
-.burger-button {
-    width: 30px;
-    height: 27.72px;
-}
-
-.burger-button {
-    display: none;
-}
-
-@media screen and (max-width: 900px) {
-    .burger-button {
-        display: block;
-    }
-
-    .nav-menu {
+    @media (max-width: $breakpointMobile) {
         display: none;
-    }
 
-    .navbar {
-        padding: 37px 25px 37px 25px;
+        &.is-open {
+            display: flex;
+            position: absolute;
+            top: 184px;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: transparent;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
