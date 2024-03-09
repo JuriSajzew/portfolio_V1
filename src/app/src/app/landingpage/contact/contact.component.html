@@ -23,7 +23,6 @@
                     <a href="">Contact me!</a>
                 </span>
             </div>
-
         </div>
         <div class="input-contain">
             <form class="form-contain" #contactForm="ngForm">
@@ -61,6 +60,7 @@
                         </span>
                     </div>
                     <span *ngIf="!setCheckbox" ngClass="warnText">Please accept the privacy policy.</span>
+
                 </div>
                 <div class="button-contain">
                     <button class="sendMail-button-1" *ngIf="!setCheckbox"><span>Send mail :)</span></button>
@@ -72,7 +72,7 @@
         </div>
     </div>
 
-    <!--<div class="vector-contain-footer">
+        <!--<div class="vector-contain-footer">
         <img src="./../../../../../assets/shadow/contact_footer_vector.svg" alt="">
     </div>-->
 </section>

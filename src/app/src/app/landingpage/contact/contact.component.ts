@@ -23,6 +23,7 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
+    checkPrivacy: false
   };
 
 

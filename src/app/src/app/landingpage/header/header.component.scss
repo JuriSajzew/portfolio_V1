@@ -22,7 +22,7 @@ section {
     align-items: flex-start;
     justify-content: center;
 
-    @media (max-width:$breakpointMobile) {
+    @media (max-width:$breakpointTablet) {
         flex-direction: column;
         height: 100vh;
     }

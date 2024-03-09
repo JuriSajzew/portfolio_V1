@@ -1,243 +1,333 @@
-@media (min-width:992px) {
-    section {
-        width: 100vw;
-        max-width: 100%;
-        height: 150vh;
-        background-color: #141d2f;
-        padding-top: 184px;
+@import'./../../../../../font.style.scss';
+@import'./../../../../../mixin.style.scss';
+@import'./../../../../../styles.scss';
+
+section {
+    width: 100vw;
+    max-width: 100%;
+    height: 200vh;
+    background-color: #141d2f;
+    padding-top: 184px;
+
+    @media (max-width:$breakpointTablet) {
+        height: auto;
+    }
+}
+
+.heading-contain {
+    width: 100vw;
+    max-width: 100%;
+    height: 248px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hc1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+    width: 100%;
+
+    @media (max-width:$breakpointTablet) {
+        width: 340px;
+        gap: 20px;
+    }
+}
+
+.vector1 {
+    display: flex;
+    align-items: center;
+    height: 108px;
+    width: 10%;
+
+    @media (max-width:$breakpointTablet) {
+        width: 100px;
+
     }
 
-    .heading-contain {
-        width: 100vw;
-        max-width: 100%;
-        height: 108px;
-        display: flex;
-        align-items: center;
-        justify-content: end;
-        column-gap: 50px;
+    img {
+        width: 100%;
+
+    }
+}
+
+.heading-text {
+    display: flex;
+    align-items: center;
+    height: 108px;
+    width: 389px;
+
+    @media (max-width:$breakpointTablet) {
+        width: 60%;
+        height: 54px;
     }
 
-    .vector1 {
-        display: flex;
-        align-items: center;
-        height: 108px;
-        width: 10%;
+    h2 {
+        font-family: Poppins;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 108px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0;
 
-        img {
-            border: 4px solid#4B47FF;
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
-            width: 100%;
+        @media (max-width:$breakpointTablet) {
+            font-size: 45px;
+            line-height: 54px;
         }
     }
 
-    .heading-text {
-        display: flex;
-        align-items: center;
-        height: 108px;
-        width: 389px;
+}
 
-        h2 {
-            font-family: Poppins;
-            font-size: 90px;
-            font-weight: 700;
-            line-height: 108px;
-            letter-spacing: 0em;
-            text-align: center;
-            color: #FFFFFF;
-            margin: 0;
-        }
+.vector2 {
+    display: flex;
+    align-items: center;
+    height: 108px;
+    width: 35%;
 
+    @media (max-width:$breakpointTablet) {
+        width: 100%;
     }
 
-    .vector2 {
-        display: flex;
-        align-items: center;
-        height: 108px;
-        width: 35%;
+    img {
+        width: 100%;
+    }
+}
 
-        img {
-            width: 100%;
-        }
+.heading-subtitle {
+    width: 100vw;
+    max-width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+    column-gap: 20px;
+
+
+
+    span {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 733px;
+        height: 19px;
+        color: #FFFFFF;
+    }
+}
+
+.portfolio-contain {
+    width: 100vw;
+    max-width: 100%;
+    height: 80vh;
+    margin-top: 5%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width:$breakpointTablet) {
+        height: auto;
     }
 
-    .heading-subtitle {
-        width: 100vw;
-        max-width: 100%;
-        height: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 4%;
+}
 
-        span {
-            font-family: Poppins;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 19px;
-            letter-spacing: 0em;
-            text-align: center;
-            width: 733px;
-            height: 19px;
-            color: #FFFFFF;
-        }
+.project-contain {
+    width: 1168px;
+    height: 339.19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 20%;
+
+    @media (max-width:$breakpointTablet) {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.project-img {
+    width: 620px;
+    height: 339px;
+    object-fit: contain;
+    overflow: hidden;
+
+    @media (max-width:$breakpointTablet) {
+        width: 100%;
     }
 
-    .portfolio-contain {
-        width: 100vw;
-        max-width: 100%;
-        height: 80vh;
-        margin-top: 5%;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .project-contain {
-        width: 1168px;
-        height: 339.19px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 35px;
-        margin-bottom: 20%;
-    }
-
-    .project-img {
+    img {
         width: 620px;
         height: 339px;
-        object-fit: contain;
-        overflow: hidden;
 
-        img {
-            width: 620px;
-            height: 339px;
-        }
-    }
-
-    .project-text-contain {
-        width: 513px;
-        height: 339.19px;
-        display: grid;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .project-text {
-        width: 100%;
-        height: 179px;
-        display: grid;
-        flex-direction: column;
-        row-gap: 15px;
-
-
-        h3 {
+        @media (max-width:$breakpointTablet) {
             width: 100%;
-            height: 43px;
-            font-family: Poppins;
-            font-size: 32px;
-            font-weight: 700;
-            line-height: 38px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #4B47FF;
-        }
-
-        .span1 {
-            width: 100%;
-            height: 28px;
-            font-family: Poppins;
-            font-size: 23px;
-            font-weight: 400;
-            line-height: 28px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #00BEE8;
-        }
-
-        .span2 {
-            width: 100%;
-            height: 57px;
-            font-family: Poppins;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 19px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #FFFFFF;
-        }
-    }
-
-    .button-contain {
-        width: 100%;
-        height: 66px;
-        display: flex;
-        gap: 86px;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .button1 {
-        width: 156px;
-        height: 58px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        gap: 10px;
-        padding: 15px 30px 15px 30px;
-        background-color: #4B47FF;
-
-        span {
-            width: 92px;
-            height: 28px;
-            font-family: Poppins;
-            font-size: 23px;
-            font-weight: 400;
-            line-height: 28px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #FFFFFF;
-        }
-
-        &:hover {
-            cursor: pointer;
-            background-color: #00BEE8;
-        }
-    }
-
-    .button2 {
-        width: 137px;
-        height: 58px;
-        border-radius: 10px;
-        border: 1px solid #00bee8;
-        background-color: #141d2f;
-        padding: 15px 30px 15px 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-
-        span {
-            width: 80px;
-            height: 28px;
-            font-family: Poppins;
-            font-size: 23px;
-            font-weight: 400;
-            line-height: 28px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #FFFFFF;
-        }
-
-        &:hover {
-            cursor: pointer;
-            background-color: #00BEE8;
         }
     }
 }
 
-@media (min-width:768px) and (max-width:991px) {}
+.project-text-contain {
+    width: 513px;
+    height: 339.19px;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-@media (max-width:767px) {}
+    @media (max-width:$breakpointTablet) {
+        width: 100%;
+        display: flex;
+    }
+}
+
+.project-text {
+    width: 100%;
+    height: 179px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    @media (max-width:$breakpointTablet) {
+        align-items: center;
+        justify-content: center;
+        height: 265px;
+    }
+
+
+    h3 {
+        width: 100%;
+        height: 43px;
+        font-family: Poppins;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #4B47FF;
+
+        @media (max-width:$breakpointTablet) {
+            text-align: center;
+
+        }
+    }
+
+    .span1 {
+        width: 100%;
+        height: 28px;
+        font-family: Poppins;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #00BEE8;
+
+        @media (max-width:$breakpointTablet) {
+            text-align: center;
+            width: 80%;
+            height: 56px;
+        }
+    }
+
+
+    .span2 {
+        width: 100%;
+        height: 57px;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+
+        @media (max-width:$breakpointTablet) {
+            text-align: center;
+            width: 90%;
+            height: 76px;
+        }
+    }
+}
+
+.button-contain {
+    width: 100%;
+    height: 66px;
+    display: flex;
+    gap: 86px;
+    align-items: center;
+    justify-content: flex-start;
+
+    @media (max-width:$breakpointTablet) {
+   
+        justify-content: center;
+        gap: 46px;
+    }
+}
+
+.button1 {
+    width: 156px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 15px 30px 15px 30px;
+    background-color: #4B47FF;
+
+    span {
+        width: 92px;
+        height: 28px;
+        font-family: Poppins;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: #00BEE8;
+    }
+}
+
+.button2 {
+    width: 137px;
+    height: 58px;
+    border-radius: 10px;
+    border: 1px solid #00bee8;
+    background-color: #141d2f;
+    padding: 15px 30px 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    span {
+        width: 80px;
+        height: 28px;
+        font-family: Poppins;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: #00BEE8;
+    }
+}
