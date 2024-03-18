@@ -19,10 +19,11 @@
                 </div>
             </div>
             <div class="button-contain">
-                <button mat-raised-button [ngClass]="colorClass" class="button-header"
-                    (mouseenter)="changeStyle($event)" (mouseleave)="changeStyle($event)">
-                    <span>Lets`s talk!</span>
-                </button>
+                <a href="#contact"><button mat-raised-button [ngClass]="colorClass"
+                        class="button-header" (mouseenter)="changeStyle($event)" (mouseleave)="changeStyle($event)">
+                        <span>Lets`s talk!</span>
+                    </button>
+                </a>
             </div>
         </div>
     </div>
@@ -35,9 +36,10 @@
                 <img src="./../../../../../assets/shadow/referenz-vector.svg" alt="">
             </div>
             <div class="icon-referenz">
-                <img src="./../../../../../assets/shadow/Github button.svg" alt="">
-                <img src="./../../../../../assets/shadow/Email button.svg" alt="">
-                <img src="./../../../../../assets/shadow/Linkedin button.svg" alt="">
+                <img src="./../../../../../assets/shadow/Github button.svg" alt="" (click)="openGithub()">
+                <a href="mailto:j.sajzew@outlook.de"><img src="./../../../../../assets/shadow/Email button.svg"
+                        alt=""></a>
+                <img src="./../../../../../assets/shadow/Linkedin button.svg" alt="" (click)="openLinkedIn()">
             </div>
             <div class="email-referenz">
                 j.sajzew&#64;outlook.de

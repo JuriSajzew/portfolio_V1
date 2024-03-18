@@ -1,0 +1,46 @@
+.impressum {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    row-gap: 25px;
+}
+
+.headline,
+.nameContain,
+.representedContain,
+.contactData {
+    width: min(100% - 80px, 1240px);
+}
+
+.contactData {
+    flex-direction: column;
+    display: flex;
+}
+
+.headline h2 {
+    font-size: clamp(32px, 4vw, 64px);
+}
+
+.nameContain h4,
+.representedContain h4,
+.contactData h4 {
+    font-size: clamp(16px, 1.5vw, 32px);
+}
+
+.nameContain span,
+.representedContain span {
+    font-size: clamp(16px, 1vw, 32px);
+}
+
+.contactData a {
+    color: #FFFFFF;
+
+    &:hover {
+        color: #00BEE8;
+    }
+}

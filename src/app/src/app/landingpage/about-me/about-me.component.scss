@@ -6,7 +6,6 @@ section {
     width: 100vw;
     max-width: 100%;
     height: 100vh;
-    background-color: #141d2f;
 
     @media (max-width:$breakpointTablet) {
         height: 100vh;
@@ -33,13 +32,12 @@ section {
 }
 
 .about-me-contain {
-    width: 50vw;
+    width: 42vw;
     height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: -160px;
 
     @media (max-width:$breakpointTablet) {
         width: 100%;
@@ -59,7 +57,6 @@ section {
     }
 
     h2 {
-        font-family: Poppins;
         font-size: 90px;
         font-weight: 700;
         line-height: 1em;
@@ -75,7 +72,7 @@ section {
 
 .about-me-text-contain {
     width: 454px;
-    height: 336px;
+    height: 477px;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -84,21 +81,21 @@ section {
 
     @media (max-width:$breakpointTablet) {
         width: 339px;
-        height: 431px;
+        height: 612px;
+        gap: 20px;
     }
 }
 
 .about-me-text {
     width: 454px;
-    height: 114px;
+    height: 159px;
 
     @media (max-width:$breakpointTablet) {
         width: 338px;
-        height: 133px;
+        height: 201px;
     }
 
     span {
-        font-family: Poppins;
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
@@ -114,7 +111,7 @@ section {
 
 .frame6 {
     width: 444px;
-    height: 76px;
+    height: 120px;
     gap: 35px;
     display: flex;
     align-items: center;
@@ -122,7 +119,7 @@ section {
 
     @media (max-width:$breakpointTablet) {
         width: 337px;
-        height: 114px;
+        height: 180px;
     }
 }
 
@@ -139,16 +136,14 @@ section {
 
 .frame6-text {
     width: 359px;
-    height: 76px;
+    height: 120px;
 
     @media (max-width:$breakpointTablet) {
         width: 252px;
-        height: 114px;
+        height: 182px;
     }
 
     span {
-        //styleName: Style 1/body;
-        font-family: Poppins;
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;

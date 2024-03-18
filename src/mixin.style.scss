@@ -13,3 +13,5 @@
 
 $breakpointTablet: 1000px;
 $breakpointMobile: 767px;
+$breakpointHeader: (
+    min-width: 1001px) and (max-width:1028px);

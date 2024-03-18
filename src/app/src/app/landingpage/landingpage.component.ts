@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from '../shared/navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MyskillsComponent } from './myskills/myskills.component';

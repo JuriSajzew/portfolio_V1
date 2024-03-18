@@ -14,11 +14,7 @@ export class FooterComponent {
     window.open("https://github.com/JuriSajzew", "_blank");
   }
 
-  openEmail() {
-    window.open("https://google.com", "_blank");
-  }
-
   openLinkedIn() {
-    window.open("https://google.com", "_blank");
+    window.open("https://www.linkedin.com/in/juri-sajzew-893a4a143/", "_blank");
   }
 }

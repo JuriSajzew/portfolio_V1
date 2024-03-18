@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
-import { BurgerMenuComponent } from '../burger-menu/burger-menu.component';
+import { BurgerMenuComponent } from '../../landingpage/burger-menu/burger-menu.component';
 
 
 @Component({

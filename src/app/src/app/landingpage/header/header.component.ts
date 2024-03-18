@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -19,5 +19,13 @@ export class HeaderComponent {
 
   changeStyle(event: MouseEvent) {
     this.colorClass = event.type === 'mouseover' ? 'button-header:hover' : 'button-header';
+  }
+
+  openGithub() {
+    window.open("https://github.com/JuriSajzew", "_blank");
+  }
+
+  openLinkedIn() {
+    window.open("https://www.linkedin.com/in/juri-sajzew-893a4a143/", "_blank");
   }
 }

@@ -3,6 +3,9 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm, NgModel } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatCardModule } from '@angular/material/card';
+import { MatRadioModule } from '@angular/material/radio';
+
 
 
 @Component({
@@ -11,7 +14,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
   imports: [
     FormsModule,
     CommonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatCardModule,
+    MatRadioModule
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
@@ -23,15 +28,15 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
-    checkPrivacy: false
+    setCheckbox: false,
   };
 
 
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://juridev.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -42,7 +47,7 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -54,17 +59,6 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-      ngForm.resetForm();
     }
   }
-  setCheckbox: boolean = false;
-
-  clickCheckbox() {
-    this.setCheckbox = !this.setCheckbox;
-    console.log(this.setCheckbox)
-  }
-
-
 }
