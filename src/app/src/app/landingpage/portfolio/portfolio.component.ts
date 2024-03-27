@@ -35,8 +35,8 @@ export class PortfolioComponent {
   ];
 
   githubUrls: string[] = [
-    '',
-    ''
+    'https://github.com/JuriSajzew/Join_Project',
+    'https://github.com/JuriSajzew/El_pollo_loco'
   ];
 
   redirectToUrl(type: string, index: number) {
