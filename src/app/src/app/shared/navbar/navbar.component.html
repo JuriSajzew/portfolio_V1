@@ -7,8 +7,8 @@
             <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
         </li>
 
-        <ul class="nav-menu" [class.is-open]="isMenuOpen">
-            <a href="#aboutMe">About Me</a>
+        <ul class="nav-menu" [class.is-open]="isMenuOpen" (click)="toggleMenu()">
+            <a href="#aboutMe" >About Me</a>
             <a href="#mySkills">Skills</a>
             <a href="#porfolio">Portfolio</a>
         </ul>

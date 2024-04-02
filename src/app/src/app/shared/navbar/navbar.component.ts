@@ -17,7 +17,9 @@ import { BurgerMenuComponent } from '../../landingpage/burger-menu/burger-menu.c
 })
 export class NavbarComponent {
   isMenuOpen = false;
-
+/**
+ * Checks whether the burger menu is open or not
+ */
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
   }
