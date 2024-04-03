@@ -5,12 +5,11 @@
 section {
     width: 100vw;
     max-width: 100%;
-    height: 126vh;
+    height: 100vh;
 
     @media (max-width:$breakpointTablet) {
         height: 150vh;
     }
-
 }
 
 .heading-contain {
@@ -23,7 +22,6 @@ section {
     @media (max-width:$breakpointTablet) {
         gap: 15px;
     }
-
 }
 
 .vector-contain {
@@ -75,7 +73,7 @@ section {
 .contact-header {
     width: 100vw;
     max-width: 100%;
-    height: 100vh;
+    height: 65vh;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -96,7 +94,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     row-gap: 30px;
     padding-left: 200px;
     padding-right: 100px;
@@ -199,7 +197,7 @@ section {
 
 .input-contain {
     width: 50vw;
-    height: 75vh;
+    height: 63vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,7 +219,6 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 32px;
 }
 
 .frame50 {
@@ -324,7 +321,6 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-top: -20px;
     gap: 10px;
 
     span {
@@ -366,6 +362,7 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .sendMail-button-1 {
@@ -426,4 +423,14 @@ input:focus {
     letter-spacing: 0em;
     text-align: left;
     color: red;
+}
+
+.arrow-header {
+    max-width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 100px;
+
 }
