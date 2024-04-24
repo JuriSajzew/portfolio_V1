@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from '../shared/navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MyskillsComponent } from './myskills/myskills.component';
@@ -10,7 +9,6 @@ import { ContactComponent } from './contact/contact.component';
   selector: 'app-landingpage',
   standalone: true,
   imports: [
-    NavbarComponent,
     HeaderComponent,
     AboutMeComponent,
     MyskillsComponent,

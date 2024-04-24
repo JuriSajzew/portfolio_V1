@@ -6,6 +6,10 @@ body {
 
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body::-webkit-scrollbar {
     width: 6px;
     /* width of the entire scrollbar */

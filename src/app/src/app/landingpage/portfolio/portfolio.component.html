@@ -20,11 +20,11 @@
     </div>
     <div class="portfolio-contain">
         <div class="project-contain" [class.flex-row-reverse]="i % 2 !=0"
-            *ngFor="let element of projectImg; let i = index">
-            <div class="project-img">
+            *ngFor="let element of projectImg; let i = index" >
+            <div class="project-img" data-aos="zoom-in-down">
                 <img [src]="element" alt="">
             </div>
-            <div class="project-text-contain">
+            <div class="project-text-contain" data-aos="fade-left">
                 <div class="project-text">
                     <h3>{{ projectName[i] }}</h3>
                     <span class="span1">{{ framework[i] }}</span>

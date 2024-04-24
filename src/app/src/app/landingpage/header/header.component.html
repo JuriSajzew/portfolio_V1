@@ -1,12 +1,7 @@
 <section>
     <div class="header-contain">
         <div class="profile-contain">
-            <div class="profileImg-contain">
-                <img src="./../../../../../assets/img/profileImage.png" alt="Profile Image">
-            </div>
-            <div class="photo-shadow">
-                <img src="./../../../../../assets/shadow/Photo_shadows.png" alt="">
-            </div>
+            <img src="./../../../../../assets/img/profileImage.png" alt="Profile Image">
         </div>
         <div class="text-contain">
             <div class="frame3">
@@ -19,16 +14,13 @@
                 </div>
             </div>
             <div class="button-contain">
-                <a href="#contact"><button mat-raised-button [ngClass]="colorClass"
-                        class="button-header" (mouseenter)="changeStyle($event)" (mouseleave)="changeStyle($event)">
+                <a href="#contact"><button mat-raised-button [ngClass]="colorClass" class="button-header"
+                        (mouseenter)="changeStyle($event)" (mouseleave)="changeStyle($event)">
                         <span>Lets`s talk!</span>
                     </button>
                 </a>
             </div>
         </div>
-    </div>
-    <div class="vector-contain">
-        <img src="./../../../../../assets/shadow/vector-header.svg" alt="">
     </div>
     <div class="referenz-contain">
         <div class="referenz">
@@ -45,7 +37,7 @@
                 j.sajzew&#64;outlook.de
             </div>
         </div>
-        <div class="scroll-text">
+        <div class="scroll-text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
             <span>Scroll down</span>
             <img src="./../../../../../assets/shadow/down_vector.svg" alt="">
         </div>
