@@ -216,6 +216,7 @@ section {
     display: flex;
     justify-content: end;
     align-items: center;
+    overflow: hidden;
 
     @media (max-width: $breakpointTablet) {
         width: 20px;
@@ -280,7 +281,7 @@ section {
 
 .vector-left {
     position: absolute;
-    top: 382px;
+    left: 0;
 
     @media(max-width:$breakpointTablet) {
         top: 105vh;

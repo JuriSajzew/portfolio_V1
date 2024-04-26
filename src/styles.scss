@@ -8,6 +8,8 @@ body {
 
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', "Helvetica Neue", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -27,9 +29,4 @@ body::-webkit-scrollbar-thumb {
     /* roundness of the scroll thumb */
     border: 3px solid #141d2f;
     /* creates padding around scroll thumb */
-}
-
-* {
-    scroll-behavior: smooth;
-    font-family: 'Poppins', "Helvetica Neue", sans-serif;
 }

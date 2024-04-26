@@ -22,7 +22,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 50px;
 
     @media (max-width:$breakpointTablet) {
         flex-direction: column;
@@ -39,9 +38,11 @@ section {
     justify-content: center;
     position: relative;
     background-image: url("./../../../../../assets/shadow/Photo_shadows.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
+
 
     img{
         width: 100%;

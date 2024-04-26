@@ -164,6 +164,7 @@ section {
     justify-content: flex-end;
     width: 50vw;
     height: 80vh;
+    overflow: hidden;
 
     @media(max-width: $breakpointTablet) {
         display: none;
