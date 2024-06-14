@@ -1,16 +1,12 @@
-@import'./../../../../../font.style.scss';
-@import'./../../../../../mixin.style.scss';
-@import'./../../../../../styles.scss';
+@import "./../../../../../font.style.scss";
+@import "./../../../../../mixin.style.scss";
+@import "./../../../../../styles.scss";
 
 section {
     width: 100vw;
     max-width: 100%;
-    height: 150vh;
-    margin-top: 110px;
-
-    @media (max-width:$breakpointTablet) {
-        height: auto;
-    }
+    overflow: hidden;
+    padding-bottom: 30px;
 }
 
 .flex-row-reverse {
@@ -35,7 +31,7 @@ section {
     gap: 50px;
     width: 100%;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         width: 340px;
         gap: 20px;
     }
@@ -44,29 +40,27 @@ section {
 .vector1 {
     display: flex;
     align-items: center;
-    height: 108px;
+    //height: 108px;
     width: 10%;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         width: 100px;
-
     }
 
     img {
         width: 100%;
-
     }
 }
 
 .heading-text {
     display: flex;
     align-items: center;
-    height: 108px;
+    //height: 108px;
     width: 389px;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         width: 60%;
-        height: 54px;
+        //height: 54px;
     }
 
     h2 {
@@ -76,24 +70,23 @@ section {
         line-height: 108px;
         letter-spacing: 0em;
         text-align: center;
-        color: #FFFFFF;
+        color: #ffffff;
         margin: 0;
 
-        @media (max-width:$breakpointTablet) {
+        @media (max-width: $breakpointTablet) {
             font-size: 45px;
             line-height: 54px;
         }
     }
-
 }
 
 .vector2 {
     display: flex;
     align-items: center;
-    height: 108px;
+    //height: 108px;
     width: 35%;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         width: 100%;
     }
 
@@ -105,14 +98,12 @@ section {
 .heading-subtitle {
     width: 100vw;
     max-width: 100%;
-    height: 20px;
+    //height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 4%;
     column-gap: 20px;
-
-
 
     span {
         font-family: Poppins;
@@ -122,15 +113,15 @@ section {
         letter-spacing: 0em;
         text-align: center;
         width: 733px;
-        height: 19px;
-        color: #FFFFFF;
+        //height: 19px;
+        color: #ffffff;
     }
 }
 
 .portfolio-contain {
     width: 100vw;
     max-width: 100%;
-    height: 80vh;
+    //height: 80vh;
     margin-top: 5%;
     display: flex;
     flex-direction: column;
@@ -138,35 +129,34 @@ section {
     align-items: center;
     row-gap: 40px;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         height: auto;
     }
-
 }
 
 .project-contain {
     width: 1168px;
-    height: 339.19px;
+    //height: 339.19px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 35px;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         flex-direction: column;
         width: 100%;
-        height: auto;
+        //height: auto;
     }
 }
 
 .project-img {
     width: 512px;
-    height: 339px;
+    //height: 339px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         width: 100%;
     }
 
@@ -175,7 +165,7 @@ section {
         object-fit: contain;
         object-position: center;
 
-        @media (max-width:$breakpointTablet) {
+        @media (max-width: $breakpointTablet) {
             width: 100%;
         }
     }
@@ -183,13 +173,13 @@ section {
 
 .project-text-contain {
     width: 513px;
-    height: 339.19px;
+   // height: 339.19px;
     display: grid;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         width: 100%;
         display: flex;
     }
@@ -197,30 +187,30 @@ section {
 
 .project-text {
     width: 100%;
-    height: 179px;
+    //height: 179px;
     display: flex;
     flex-direction: column;
     row-gap: 15px;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         align-items: center;
         justify-content: center;
-        height: 265px;
+        //height: 265px;
     }
-
 
     h3 {
         width: 100%;
-        height: 43px;
+        //height: 43px;
         font-family: Poppins;
         font-size: 32px;
         font-weight: 700;
         line-height: 38px;
         letter-spacing: 0em;
         text-align: left;
-        color: #4B47FF;
+        color: #4b47ff;
+        margin-bottom: 0;
 
-        @media (max-width:$breakpointTablet) {
+        @media (max-width: $breakpointTablet) {
             text-align: center;
 
         }
@@ -228,52 +218,51 @@ section {
 
     .span1 {
         width: 100%;
-        height: 28px;
+       // height: 28px;
         font-family: Poppins;
         font-size: 23px;
         font-weight: 400;
         line-height: 28px;
         letter-spacing: 0em;
         text-align: left;
-        color: #00BEE8;
+        color: #00bee8;
 
-        @media (max-width:$breakpointTablet) {
+        @media (max-width: $breakpointTablet) {
             text-align: center;
             width: 80%;
-            height: 56px;
+           // height: 56px;
         }
     }
 
-
     .span2 {
         width: 100%;
-        height: 57px;
+        //height: 57px;
         font-family: Poppins;
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
         letter-spacing: 0em;
         text-align: left;
-        color: #FFFFFF;
+        color: #ffffff;
 
-        @media (max-width:$breakpointTablet) {
+        @media (max-width: $breakpointTablet) {
             text-align: center;
             width: 90%;
-            height: 76px;
+            margin-bottom: 30px;
+           // height: 76px;
         }
     }
 }
 
 .button-contain {
     width: 100%;
-    height: 66px;
+    //height: 66px;
     display: flex;
     gap: 86px;
     align-items: center;
     justify-content: flex-start;
 
-    @media (max-width:$breakpointTablet) {
-
+    @media (max-width: $breakpointTablet) {
         justify-content: center;
         gap: 46px;
     }
@@ -281,37 +270,41 @@ section {
 
 .button1 {
     width: 156px;
-    height: 58px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     gap: 10px;
     padding: 15px 30px 15px 30px;
-    background-color: #4B47FF;
+    background-color: #4b47ff;
     border: unset;
 
     span {
-        width: 92px;
-        height: 28px;
         font-family: Poppins;
         font-size: 23px;
         font-weight: 400;
         line-height: 28px;
         letter-spacing: 0em;
         text-align: left;
-        color: #FFFFFF;
+        color: #ffffff;
     }
 
     &:hover {
         cursor: pointer;
-        background-color: #00BEE8;
+        background-color: #00bee8;
+    }
+
+    @media (min-width: 290px) and (max-width: 400px) {
+        width: 124px;
+
+        span {
+            font-size: 16px;
+        }
     }
 }
 
 .button2 {
     width: 137px;
-    height: 58px;
     border-radius: 10px;
     border: 1px solid #00bee8;
     background-color: #141d2f;
@@ -323,18 +316,24 @@ section {
 
     span {
         width: 80px;
-        height: 28px;
         font-family: Poppins;
         font-size: 23px;
         font-weight: 400;
         line-height: 28px;
         letter-spacing: 0em;
         text-align: left;
-        color: #FFFFFF;
+        color: #ffffff;
     }
 
     &:hover {
         cursor: pointer;
-        background-color: #00BEE8;
+        background-color: #00bee8;
+    }
+
+    @media (min-width: 290px) and (max-width: 400px) {
+        width: 112px;
+        span {
+            font-size: 16px;
+        }
     }
 }

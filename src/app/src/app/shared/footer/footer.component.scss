@@ -1,16 +1,12 @@
-@import'./../../../../../font.style.scss';
-@import'./../../../../../mixin.style.scss';
-@import'./../../../../../styles.scss';
+@import "./../../../../../font.style.scss";
+@import "./../../../../../mixin.style.scss";
+@import "./../../../../../styles.scss";
 
 section {
     width: 100vw;
     max-width: 100%;
-    background-color: #141D2F;
-    border-top: 4px solid #00BEE8;
-
-    @media (max-width:$breakpointTablet) {
-        height: 50vh;
-    }
+    background-color: #141d2f;
+    border-top: 4px solid #00bee8;
 }
 
 .footer-contain {
@@ -19,26 +15,30 @@ section {
     justify-content: space-between;
     padding: 80px 80px;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        height: 50vh;
+        //height: 50vh;
         row-gap: 20px;
-
     }
 }
 
 .frame150 {
     width: 216px;
-    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
 
     img {
         width: 216px;
-        height: 20vh;
+        //height: 20vh;
+    }
+
+    @media (min-width: 290px) and (max-width: 400px) {
+        img {
+            width: 160px;
+        }
     }
 }
 
@@ -46,7 +46,7 @@ section {
     border-bottom: 1px solid transparent;
     text-decoration: none;
     width: 111px;
-    height: 32px;
+    //height: 32px;
     padding: 5px 10px 5px 10px;
     gap: 3px;
     font-size: 16px;
@@ -57,28 +57,26 @@ section {
     color: #ffffff;
     transition: border-bottom 0.3s ease-in-out;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         display: none;
     }
 
-
     &:hover {
-        border-bottom: 4px solid #00BEE8;
-
+        border-bottom: 4px solid #00bee8;
     }
 }
 
 .impressum-mobile {
     display: none;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         display: flex;
 
         a {
             border-bottom: 1px solid transparent;
             text-decoration: none;
             width: 111px;
-            height: 32px;
+            // height: 32px;
             padding: 5px 10px 5px 10px;
             gap: 3px;
             font-size: 16px;
@@ -89,10 +87,8 @@ section {
             color: #ffffff;
             transition: border-bottom 0.3s ease-in-out;
 
-
             &:hover {
-                border-bottom: 4px solid #00BEE8;
-
+                border-bottom: 4px solid #00bee8;
             }
         }
     }
@@ -104,12 +100,16 @@ section {
     line-height: 1.75em;
     letter-spacing: 0em;
     text-align: left;
-    color: #FFFFFF;
+    color: #ffffff;
+
+    @media (min-width: 290px) and (max-width: 400px) {
+        font-size: 16px;
+    }
 }
 
 .icon-contain {
     width: 200px;
-    height: 55px;
+    //height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;

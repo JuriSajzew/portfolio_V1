@@ -1,15 +1,6 @@
 @import './../../../../../font.style.scss';
 @import './../../../../../mixin.style.scss';
 
-section {
-    width: 100vw;
-    max-width: 100%;
-    display: flex;
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    z-index: 30;
-}
 
 .navbar {
     width: 100vw;
@@ -60,7 +51,6 @@ section {
 
 .nav-menu {
     width: 324px;
-    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,6 +97,14 @@ section {
             align-items: center;
             justify-content: center;
             background-color: rgb(65,72,86);
+            z-index: 22;
+        }
+
+        &:hover{
+            animation-timing-function: linear;
+            animation-duration: 200ms;
+            color: #00BEE8;
+            border-bottom: 4px solid #4B47FF;
         }
     }
 }

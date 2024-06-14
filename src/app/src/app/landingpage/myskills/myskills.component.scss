@@ -1,17 +1,12 @@
-@import'./../../../../../font.style.scss';
-@import'./../../../../../mixin.style.scss';
-@import'./../../../../../styles.scss';
+@import "./../../../../../font.style.scss";
+@import "./../../../../../mixin.style.scss";
+@import "./../../../../../styles.scss";
 
 section {
     width: 100vw;
     max-width: 100%;
-    margin-top: 109px;
-
-    @media (max-width:$breakpointTablet) {
-        height: 130vh;
-        padding-top: 137px;
-    }
-
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .mySkills-header {
@@ -19,10 +14,9 @@ section {
     align-items: center;
     justify-content: center;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         flex-direction: column-reverse;
     }
-
 }
 
 .skills-img-contain {
@@ -36,52 +30,47 @@ section {
     column-gap: 9vw;
     padding: 50px 100px;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         width: 100%;
-        padding-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0;
+        padding-left: 16px;
+        padding-right: 16px;
         column-gap: 60px;
         justify-content: center;
-        height: 85vh;
     }
 }
 
 .skillsImg-contain {
     width: 88px;
-    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         width: 59px;
-        height: 100px;
-
     }
 }
 
 .skills-image {
     width: 56px;
-    height: 60px;
     display: grid;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         width: 41px;
-        height: 45px;
     }
 
     img {
         width: 56px;
-        height: 60px;
         gap: 10px;
         display: grid;
 
-        @media (max-width:$breakpointTablet) {
+        @media (max-width: $breakpointTablet) {
             width: 41px;
-            height: 45px;
         }
-
 
         &:hover {
             transform: translateY(-10px) skewY(10deg) scale(1.1);
@@ -95,26 +84,22 @@ section {
     align-items: center;
     justify-content: end;
 
-    @media (max-width:$breakpointTablet) {
+    @media (max-width: $breakpointTablet) {
         width: 62px;
-        height: 17px;
     }
-
 
     span {
         width: 88px;
-        height: 37px;
         text-align: center;
         font-family: Poppins;
         font-size: 16px;
         font-weight: 700;
         line-height: 19px;
         letter-spacing: 0em;
-        color: #FFFFFF;
+        color: #ffffff;
 
-        @media (max-width:$breakpointTablet) {
+        @media (max-width: $breakpointTablet) {
             width: 62px;
-            height: 17px;
             font-size: 12px;
         }
     }
@@ -122,7 +107,6 @@ section {
 
 .skills-heading-contain {
     width: 50vw;
-    height: 58vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -130,7 +114,6 @@ section {
 
     @media (max-width: $breakpointTablet) {
         width: 100%;
-        height: 136px;
     }
 }
 
@@ -144,7 +127,6 @@ section {
 
 .heading-contain {
     width: 571px;
-    height: 180px;
     display: flex;
     column-gap: 20px;
 
@@ -155,7 +137,6 @@ section {
 
 .heading {
     width: 473px;
-    height: 180px;
     display: grid;
     align-items: start;
     justify-content: end;
@@ -163,7 +144,6 @@ section {
 
     @media (max-width: $breakpointTablet) {
         width: 100%;
-        height: 136px;
         gap: 25px;
         display: flex;
         flex-direction: column;
@@ -173,19 +153,17 @@ section {
 
     h2 {
         width: 472px;
-        height: 108px;
         font-family: Poppins;
         font-size: 90px;
         font-weight: 700;
         line-height: 108px;
         letter-spacing: 0em;
         text-align: right;
-        color: #FFFFFF;
+        color: #ffffff;
         margin: 0;
 
         @media (max-width: $breakpointTablet) {
             width: 200px;
-            height: 54px;
             font-size: 45px;
             line-height: 54px;
         }
@@ -193,18 +171,16 @@ section {
 
     span {
         width: 471px;
-        height: 38px;
         font-family: Poppins;
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
         letter-spacing: 0em;
         text-align: right;
-        color: #FFFFFF;
+        color: #ffffff;
 
         @media (max-width: $breakpointTablet) {
             width: 338px;
-            height: 57px;
             line-height: 16px;
         }
     }
@@ -212,7 +188,6 @@ section {
 
 .vector-mySkills {
     width: 112px;
-    height: 108px;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -220,7 +195,6 @@ section {
 
     @media (max-width: $breakpointTablet) {
         width: 20px;
-        height: 54px;
     }
 }
 
@@ -230,7 +204,6 @@ section {
 
 .button-mySkills {
     width: 100%;
-    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,33 +222,30 @@ section {
 
 .getInTouch {
     width: 204px;
-    height: 50px;
     border-radius: 10px;
     padding: 15px 30px 15px 30px;
     gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #00BEE8;
+    background-color: #00bee8;
     border: unset;
 
     span {
         width: 140px;
-        height: 28px;
         font-family: Poppins;
         font-size: 23px;
         font-weight: 400;
         line-height: 28px;
         letter-spacing: 0em;
         text-align: left;
-        color: #FFFFFF;
+        color: #ffffff;
     }
 
     &:hover {
         cursor: pointer;
         width: 210px;
-        height: 60px;
-        background-color: #4B47FF !important;
+        background-color: #4b47ff !important;
     }
 }
 
@@ -283,17 +253,20 @@ section {
     position: absolute;
     left: 0;
 
-    @media(max-width:$breakpointTablet) {
+    @media (min-width:1000px) and (max-width: $breakpointTablet) {
         top: 105vh;
         width: 265px;
         left: -57px;
+    }
+
+    @media (min-width: 290px) and (max-width: 999px) {
+        top: 187vh;
     }
 }
 
 .button-mySkills-mobile {
     @media (max-width: $breakpointTablet) {
         width: 100%;
-        height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -312,37 +285,34 @@ section {
 .getInTouch-mobile {
     @media (max-width: $breakpointTablet) {
         width: 158px;
-        height: 49px;
         border-radius: 10px;
         padding: 15px 30px 15px 30px;
         gap: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #00BEE8;
+        background-color: #00bee8;
         border: none;
     }
 
     span {
         @media (max-width: $breakpointTablet) {
             width: 98px;
-            height: 19px;
             font-size: 15px;
             line-height: 19.2px;
             font-family: Poppins;
             font-weight: 400;
             letter-spacing: 0em;
             text-align: left;
-            color: #FFFFFF;
+            color: #ffffff;
         }
     }
 
     &:hover {
         @media (max-width: $breakpointTablet) {
             width: 162px;
-            height: 53px;
             cursor: pointer;
-            background-color: #4B47FF !important;
+            background-color: #4b47ff !important;
         }
     }
 }

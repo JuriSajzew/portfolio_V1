@@ -5,6 +5,7 @@ import { FormsModule, NgForm, NgModel } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 
 
@@ -22,6 +23,7 @@ import { MatRadioModule } from '@angular/material/radio';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+  constructor(private snackBar: MatSnackBar) { }
   http = inject(HttpClient)
 
   contactData = {
@@ -51,8 +53,8 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
+            this.opensnackBar('Email wurde erfolgreich gesendet', 'OK');
           },
           error: (error) => {
             console.error(error);
@@ -60,5 +62,11 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     }
+  }
+
+  opensnackBar(message: string, action: string) {
+    this.snackBar.open(message, action, {
+      duration: 2000,
+    });
   }
 }
