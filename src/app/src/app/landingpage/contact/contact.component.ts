@@ -6,6 +6,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { DialogEmailSentComponent } from '../dialog-email-sent/dialog-email-sent.component';
+import { MatDialog } from '@angular/material/dialog';
+
 
 
 
@@ -17,13 +20,17 @@ import { MatSnackBar } from '@angular/material/snack-bar';
     CommonModule,
     MatCheckboxModule,
     MatCardModule,
-    MatRadioModule
+    MatRadioModule,
+    FormsModule,
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  constructor(private snackBar: MatSnackBar) { }
+  constructor(
+    private snackBar: MatSnackBar,
+    public dialog: MatDialog,
+  ) { }
   http = inject(HttpClient)
 
   contactData = {
@@ -54,7 +61,8 @@ export class ContactComponent {
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
-            this.opensnackBar('Email wurde erfolgreich gesendet', 'OK');
+            this.openDialog();
+            //this.opensnackBar('Email wurde erfolgreich gesendet', 'OK');
           },
           error: (error) => {
             console.error(error);
@@ -64,9 +72,13 @@ export class ContactComponent {
     }
   }
 
-  opensnackBar(message: string, action: string) {
-    this.snackBar.open(message, action, {
-      duration: 2000,
-    });
+  openDialog() {
+    this.dialog.open(DialogEmailSentComponent);
   }
+
+  //opensnackBar(message: string, action: string) {
+  //  this.snackBar.open(message, action, {
+  //    duration: 10000,
+  //  });
+  //}
 }

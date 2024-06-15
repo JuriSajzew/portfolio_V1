@@ -1,0 +1,16 @@
+@import "./../../../../../font.style.scss";
+@import "./../../../../../mixin.style.scss";
+@import "./../../../../../styles.scss";
+
+.dialog-contain {
+    background-color: #141d2f;
+    border
+
+    mat-dialog-content{
+        p{
+            font: size 16px;
+            color: white;
+        }
+    }
+    
+}
