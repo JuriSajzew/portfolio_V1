@@ -1,17 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
   projectImg: string[] = [
-    'assets/img/join.svg',
-    'assets/img/el_pollo_loco.svg',
+    'assets/img/join.png',
+    'assets/img/El_Pollo_loco.png',
   ];
 
   projectName: string[] = [
