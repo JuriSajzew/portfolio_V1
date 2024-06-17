@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './src/app/shared/footer/footer.component';
@@ -11,12 +11,14 @@ import { NavbarComponent } from './src/app/shared/navbar/navbar.component';
     CommonModule,
     RouterOutlet,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'Portfolio';
+
+
 }
 

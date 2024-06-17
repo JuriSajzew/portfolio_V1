@@ -8,6 +8,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { DialogEmailSentComponent } from '../dialog-email-sent/dialog-email-sent.component';
 import { MatDialog } from '@angular/material/dialog';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -22,6 +23,7 @@ import { MatDialog } from '@angular/material/dialog';
     MatCardModule,
     MatRadioModule,
     FormsModule,
+    TranslateModule
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
@@ -62,7 +64,6 @@ export class ContactComponent {
           next: (response) => {
             ngForm.resetForm();
             this.openDialog();
-            //this.opensnackBar('Email wurde erfolgreich gesendet', 'OK');
           },
           error: (error) => {
             console.error(error);
@@ -75,10 +76,4 @@ export class ContactComponent {
   openDialog() {
     this.dialog.open(DialogEmailSentComponent);
   }
-
-  //opensnackBar(message: string, action: string) {
-  //  this.snackBar.open(message, action, {
-  //    duration: 10000,
-  //  });
-  //}
 }

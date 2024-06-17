@@ -4,23 +4,20 @@
             <img src="./../../../../../assets/shadow/contact_vector.svg" alt="">
         </div>
         <div class="heading-text">
-            <h2>Contact</h2>
+            <h2>{{'contact.contact' |translate}}</h2>
         </div>
     </div>
     <div class="contact-header">
         <div class="heading">
             <div class="frame1">
-                <span>Got a problem to solve?</span>
+                <span>{{'contact.contact1' |translate}}</span>
             </div>
             <div class="frame2">
-                <span>
-                    Contact me through this form, I am interested in hearing from you, knowing your ideas and
-                    contributing to your projects with my work.
-                </span>
+                <span> {{'contact.contact2' |translate}} </span>
             </div>
             <div class="frame3">
-                <span>Need a Frontend developer?
-                    <a href="">Contact me!</a>
+                <span>{{'contact.contact3' |translate}}
+                    <a href="">{{'contact.contact4' |translate}}</a>
                 </span>
             </div>
         </div>
@@ -30,7 +27,8 @@
                     <input #name="ngModel" minlength="3" [(ngModel)]="contactData.name" id="contactName" class="frame50"
                         name="name" placeholder="Your name" type="text" required>
                     <div style="width: 100%;height: 20px;">
-                        <span *ngIf="!name.valid && name.touched" ngClass="warnText">Please enter a name</span>
+                        <span *ngIf="!name.valid && name.touched" ngClass="warnText">{{'contact.warnText'
+                            |translate}}</span>
                     </div>
                 </div>
                 <div class="textarea-contain">
@@ -38,14 +36,16 @@
                         name="email" placeholder="Your email" type="email" required
                         pattern="^(http(s){0,1}:\/\/.){0,1}[\-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([\-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$">
                     <div style="width: 100%;height: 20px;">
-                        <span *ngIf="!email.valid && email.touched" ngClass="warnText">Please enter a email</span>
+                        <span *ngIf="!email.valid && email.touched" ngClass="warnText">{{'contact.warnText2'
+                            |translate}}</span>
                     </div>
                 </div>
                 <div class="textarea-contain">
                     <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" class="frame51"
                         name="message" placeholder="Your message" type="message" required></textarea>
                     <div style=" width: 100%; height: 20px;">
-                        <span *ngIf="!message.valid && message.touched" ngClass="warnText">Please enter a message</span>
+                        <span *ngIf="!message.valid && message.touched" ngClass="warnText">{{'contact.warnText3'
+                            |translate}}</span>
                     </div>
                 </div>
                 <div style="width: 100%;">
@@ -54,21 +54,20 @@
                             <input #setCheckbox="ngModel" [(ngModel)]="contactData.setCheckbox" type="checkbox"
                                 class="checkbox" name="checkbox" required>
                         </div>
-                        <span>I've read the
-                            <a href="">privacy policy</a>
-                            and agree to the processing of my data as outlined.
+                        <span>{{'contact.privacyText1' | translate}}
+                            <a href="">{{'contact.privacyPolice' | translate}}</a>
+                            {{'contact.privacyText2' | translate}}
                         </span>
                     </div>
                     <div style="width: 100%;height: 20px;">
                         <span *ngIf="!setCheckbox.valid && setCheckbox.touched && !setCheckbox.untouched"
-                            ngClass="warnText">Please accept the
-                            privacy policy.</span>
+                            ngClass="warnText">{{'contact.warnText4' |translate}}</span>
                     </div>
                 </div>
                 <div class="button-contain">
                     <button [disabled]="form.invalid"
                         [ngClass]="{'sendMail-button-1': form.invalid, 'sendMail-button': !form.invalid}" type="submit">
-                        <span>Send mail :)</span>
+                        <span>{{'contact.button' |translate}} :)</span>
                     </button>
                 </div>
             </form>

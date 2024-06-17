@@ -1,0 +1,70 @@
+{
+    "navbar": {
+        "language": "Deutsch",
+        "menu1": "Über mich",
+        "menu2": "Skills",
+        "menu3": "Portfolio"
+    },
+    "header": {
+        "language": "Deutsch",
+        "iAm": "Ich bin",
+        "fd": "Frondend Entwickler",
+        "button": "Lass uns reden!"
+    },
+    "aboutMe": {
+        "language": "Deutsch",
+        "aboutMe": "Über mich",
+        "aboutMe1": "Hallo, ich bin ein Frontend-Entwickler aus Stuttgart. In meinem früheren Job als Logistikmanager bin ich oft mit der Programmierung in Berührung gekommen. Die Technik und Logik hinter einer Benutzeroberfläche hat mich schon immer fasziniert. Mein Ziel ist es, innovative Lösungen zu entwickeln, die die Erwartungen der Kunden übertreffen und gleichzeitig einen positiven Einfluss auf die Nutzer haben. ",
+        "aboutMe2": "Während meiner Ausbildung an der Delevolper Academy habe ich mehrere Projekte erstellt. Dadurch konnte ich meine Kenntnisse in HTML, CSS, JavaScript, Angular und TypeScript ausbauen. Einige Projekte mussten in einem Team durchgeführt werden, was mir sehr viel Spaß bereitet hat.",
+        "aboutMe3": "In meiner Freizeit erforsche ich gerne Designtrends und experimentiere mit neuen Techniken. Ich arbeite auch mit neuen Technologien, um mein Wissen ständig zu erweitern. "
+    },
+    "skills": {
+        "language": "Deutsch",
+        "skills": "Meine Skills",
+        "skills1": "Ich habe meine Fähigkeiten im Bereich der Frontend-Entwicklung ausgebaut, die es mir erlaubt haben, verschiedene reale Projekte zu bauen.",
+        "button": "Kontakt aufnehmen"
+    },
+    "portfolio": {
+        "language": "Deutsch",
+        "portfolio": "Portfolio",
+        "portfolio1": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen."
+    },
+    "projects": [
+        {
+            "description": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
+        },
+        {
+            "description": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Salsaflaschen zu finden, um gegen den riesen Huhn zu kämpfen."
+        }
+    ],
+    "contact": {
+        "language": "Deutsch",
+        "contact": "Kontakt",
+        "contact1": "Haben Sie ein Problem zu lösen?",
+        "contact2": "Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+        "contact3": "Brauchen Sie einen Frontend-Entwickler?",
+        "contact4": "Kontaktieren Sie mich!",
+        "warnText": "Bitte geben Sie einen Namen ein",
+        "warnText2": "Bitte geben Sie eine E-Mail ein",
+        "warnText3": "Bitte geben Sie eine Nachricht ein",
+        "warnText4": "Bitte akzeptieren Sie die Datenschutzbestimmungen.",
+        "placeholderName": "Name",
+        "placeholderEmail": "Emailadresse",
+        "placeholderMessage": "Ihre Nachricht",
+        "button": "Email senden",
+        "privacyPolice": "Datenschutzerklärung",
+        "privacyText1": "Ich habe die",
+        "privacyText2": "gelesen und bin mit der Verarbeitung meiner Daten einverstanden."
+    },
+    "footer": {
+        "language": "Deutsch",
+        "privacy": "Datenschutzerklärung",
+        "imprint": "Impressum"
+    },
+    "imprint":{
+        "title":"Impressum",
+        "information":"Angaben gemäß § 5 TMG",
+        "represented":"Vertreten durch:",
+        "contact":"Kontakt:"
+    }
+}

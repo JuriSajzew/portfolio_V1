@@ -1,0 +1,74 @@
+{
+    "navbar": {
+        "language": "English",
+        "menu1": "About me",
+        "menu2": "Skills",
+        "menu3": "Portfolio"
+    },
+    "header": {
+        "language": "English",
+        "iAm": "I am",
+        "fd": "Frondend Developer",
+        "button": "Lets`s talk!"
+    },
+    "aboutMe": {
+        "language": "English",
+        "aboutMe": "About me",
+        "aboutMe1": "Hi, I'm a front-end developer from Stuttgart. In my previous job as a logistics manager, I often came into contact with programming. I have always been fascinated by the technology and logic behind a user interface. My goal is to develop innovative solutions that exceed customer expectations while having a positive impact on users. ",
+        "aboutMe2": "During my training at Delevolper Academy, I created several projects. This allowed me to expand my knowledge of HTML, CSS, JavaScript, Angular and TypeScript. Some projects had to be carried out in a team, which I really enjoyed.",
+        "aboutMe3": "In my free time, I like to explore design trends and experiment with new techniques. I also work with new technologies to constantly expand my knowledge. "
+    },
+    "skills": {
+        "language": "English",
+        "skills": "My Skills",
+        "skills1": "I have grown my frontend developments skills that have allowed me to create different real projects.",
+        "button": "Get in touch"
+    },
+    "portfolio": {
+        "language": "English",
+        "portfolio": "Portfolio",
+        "portfolio1": "Explore a selection of my work here - Interact with projects to see my skills in action."
+    },
+    "projects": [
+        {
+            "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+        },
+        {
+            "description": "A simple jump-and-run game based on an object-oriented approach. Help Pepe find coins and salsa bottles to fight against the giant chicken."
+        }
+    ],
+    "contact": {
+        "language": "English",
+        "contact": "Contact",
+        "contact1": "Got a problem to solve?",
+        "contact2": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+        "contact3": "Need a Frontend developer?",
+        "contact4": " Contact me!",
+        "warnText": "Please enter a name",
+        "warnText2": "Please enter a email",
+        "warnText3": "Please enter a message",
+        "warnText4": "Please accept the privacy policy.",
+        "placeholderName": "Your Name",
+        "placeholderEmail": "Your Email",
+        "placeholderMessage": "Your Message",
+        "button": "Send mail",
+        "privacyPolice":"privacy policy",
+        "privacyText1":"I've read the",
+        "privacyText2":"and agree to the processing of my data as outlined."
+    },
+    "footer": {
+        "language": "English",
+        "privacy": "privacy policy",
+        "imprint": "Imprint"
+    },
+
+    "imprint":{
+        "language":"English",
+        "title":"Imprint",
+        "information":"Information according to § 5 TMG",
+        "represented":"Represented by:",
+        "contact":"contact:",
+        "phone":"(+49) 15141661740",
+        "email":"j.sajzew@outlook.de"
+    }
+}

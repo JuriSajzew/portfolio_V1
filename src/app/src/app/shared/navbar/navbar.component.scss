@@ -1,17 +1,16 @@
-@import './../../../../../font.style.scss';
-@import './../../../../../mixin.style.scss';
-
+@import "./../../../../../font.style.scss";
+@import "./../../../../../mixin.style.scss";
 
 .navbar {
     width: 100vw;
     max-width: 100%;
-    background-color: #141D2F;
+    background-color: #141d2f;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 37px 100px 37px 100px;
 
-    @media (max-width:$breakpointMobile) {
+    @media (max-width: $breakpointMobile) {
         padding: 37px 25px 37px 25px;
         height: 43px;
     }
@@ -34,7 +33,7 @@
 .burger {
     display: none;
 
-    @media (max-width:$breakpointMobile) {
+    @media (max-width: $breakpointMobile) {
         display: flex;
         align-items: center;
         width: 70px;
@@ -43,14 +42,14 @@
         justify-content: center;
 
         .material-icons {
-            color: #FFFFFF;
+            color: #ffffff;
             font-size: 70px !important;
         }
     }
 }
 
 .nav-menu {
-    width: 324px;
+    width: 491px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,17 +67,16 @@
         line-height: 28px;
         letter-spacing: 0em;
         text-align: left;
-        color: #FFFFFF;
+        color: #ffffff;
         text-decoration: none;
-        border-bottom: 4px solid #141D2F;
+        border-bottom: 4px solid #141d2f;
 
         &:hover {
             cursor: pointer;
             animation-timing-function: linear;
             animation-duration: 200ms;
-            color: #00BEE8;
-            border-bottom: 4px solid #4B47FF;
-
+            color: #00bee8;
+            border-bottom: 4px solid #4b47ff;
         }
     }
 
@@ -96,15 +94,33 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: rgb(65,72,86);
+            background-color: rgb(65, 72, 86);
             z-index: 22;
         }
 
-        &:hover{
+        &:hover {
             animation-timing-function: linear;
             animation-duration: 200ms;
-            color: #00BEE8;
-            border-bottom: 4px solid #4B47FF;
+            color: #00bee8;
+            border-bottom: 4px solid #4b47ff;
         }
+    }
+
+    .language-contain {
+        border-bottom: 4px solid #141d2f;
+        :hover {
+            cursor: pointer;
+            animation-timing-function: linear;
+            animation-duration: 200ms;
+            color: #00bee8;
+            border-bottom: 4px solid #4b47ff;
+            
+        }
+    }
+
+    .buttonLanguage {
+        border: none;
+        background-color: #141d2f;
+        color: #ffffff;;
     }
 }

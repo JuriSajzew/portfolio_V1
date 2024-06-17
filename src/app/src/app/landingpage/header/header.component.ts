@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
@@ -9,7 +9,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [
     MatButtonModule,
-    CommonModule
+    CommonModule,
+    TranslateModule,
   ],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
