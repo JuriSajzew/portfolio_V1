@@ -4,7 +4,8 @@
 
 .dialog-contain {
     background-color: #141d2f;
-    border
+    position: relative;
+    z-index: 30;
 
     mat-dialog-content{
         p{

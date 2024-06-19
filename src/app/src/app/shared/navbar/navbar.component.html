@@ -1,5 +1,5 @@
 <section>
-    <nav class="navbar">
+    <nav class="navbar" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
         <div class="logo-contain">
             <img src="./../../../../../assets/img/logoSVG.svg" alt="">
         </div>

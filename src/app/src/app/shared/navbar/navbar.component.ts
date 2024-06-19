@@ -1,4 +1,4 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, HostListener, OnInit, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { BurgerMenuComponent } from '../../landingpage/burger-menu/burger-menu.component';
@@ -24,15 +24,18 @@ import { MatFormFieldModule } from '@angular/material/form-field';
   styleUrl: './navbar.component.scss'
 })
 
-
+//
 export class NavbarComponent implements OnInit {
+
+  navbarfixed: boolean = false;
+
   languages = ['de', 'en'];
-  private translateService = inject(TranslateService);
   isMenuOpen = false;
-  dropdownOpen = false;
+
+  private translateService = inject(TranslateService);
 
   ngOnInit(): void {
-    const defaultLang = localStorage.getItem('language') || 'de';
+    const defaultLang = 'de';
     this.translateService.setDefaultLang(defaultLang);
     this.translateService.use(defaultLang);
   }
@@ -45,5 +48,19 @@ export class NavbarComponent implements OnInit {
    */
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  @HostListener('window:scroll', ['$event']) onscroll() {
+    if (window.scrollY > 200) {
+      this.navbarfixed = true;
+      setTimeout(() => {
+        this.navbarfixed = false;
+      }, 2000);
+    }
+    else {
+      setTimeout(() => {
+        this.navbarfixed = false;
+      }, 300);
+    }
   }
 }

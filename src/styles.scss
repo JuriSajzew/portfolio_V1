@@ -3,13 +3,12 @@ body {
     height: 100%;
     background-color: #141d2f;
     margin: 0;
-
 }
 
-*{
+* {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Poppins', "Helvetica Neue", sans-serif;
+    font-family: "Poppins", "Helvetica Neue", sans-serif !important;
 }
 
 body::-webkit-scrollbar {
@@ -30,3 +29,11 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid #141d2f;
     /* creates padding around scroll thumb */
 }
+
+.contain {
+    @media (max-width: 1920px) {
+        max-width: 1440px;
+    }
+}
+
+

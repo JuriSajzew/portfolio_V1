@@ -25,11 +25,6 @@ export class PortfolioComponent {
     'JavaScript | HTML | CSS'
   ];
 
-  projectText: string[] = [
-    'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-    'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.'
-  ];
-
   liveUrls: string[] = [
     'https://join.juridev.de',
     'https://el-pollo-loco.juridev.de'

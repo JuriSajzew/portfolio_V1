@@ -3,6 +3,11 @@
 
 section {
     overflow: hidden;
+    height: 106vh;
+
+    @media (min-width: 290px) and (max-width: 1920px) {
+        height: auto;
+    }
 }
 
 .header-contain {
@@ -45,7 +50,6 @@ section {
 
             @media (max-width: 400px) {
                 width: 100%;
-                
             }
         }
     }
@@ -174,7 +178,6 @@ section {
 
             &:hover {
                 cursor: pointer;
-                height: 70px;
                 background-color: #4b47ff !important;
 
                 @media (max-width: $breakpointTablet) {
@@ -224,6 +227,7 @@ section {
 
             :hover {
                 cursor: pointer;
+                transform: scale(1);
             }
         }
 
@@ -258,6 +262,7 @@ section {
         justify-content: center;
         flex-direction: column;
         row-gap: 60px;
+        z-index: 2;
 
         span {
             transform: rotate(90deg);
@@ -279,305 +284,3 @@ section {
         }
     }
 }
-//
-//section {
-//    width: 100vw;
-//    max-width: 100%;
-//    //margin-top: 109px;
-//    //background-image: url("./../../../../../assets/shadow/vector-header.svg");
-//    //overflow: hidden;
-//    //background-size: cover;
-//    //background-position: center bottom 144%;
-//
-//    @media (max-width:$breakpointTablet) {
-//
-//    }
-//}
-//
-//.header-contain {
-//    width: 100vw;
-//    max-width: 100%;
-//    display: flex;
-//    align-items: center;
-//    justify-content: center;
-//
-//    @media (max-width:$breakpointTablet) {
-//        flex-direction: column;
-//        height: 100vh;
-//    }
-//}
-//
-//.profile-contain {
-//    width: 40vw;
-//    max-width: 100%;
-//    height: 86vh;
-//    display: flex;
-//    align-items: center;
-//    justify-content: center;
-//    position: relative;
-//    background-image: url("./../../../../../assets/shadow/Photo_shadows.png");
-//    background-size: contain;
-//    background-repeat: no-repeat;
-//    background-position: center;
-//    overflow: hidden;
-//
-//
-//    img{
-//        width: 100%;
-//    }
-//
-//    @media (max-width:$breakpointTablet) {
-//        width: 100%;
-//    }
-//}
-//
-//.text-contain {
-//    width: 60vw;
-//    max-width: 100%;
-//    height: 50vh;
-//    display: flex;
-//    align-items: flex-start;
-//    justify-content: center;
-//    gap: 35px;
-//    flex-direction: column;
-//    z-index: 1;
-//    position: relative;
-//
-//    @media (max-width:$breakpointTablet) {
-//        width: 100%;
-//        height: 35vh;
-//    }
-//}
-//
-//.frame3 {
-//    display: flex;
-//    align-items: center;
-//    justify-content: center;
-//
-//    @media (max-width:$breakpointTablet) {
-//        width: 100%
-//    }
-//}
-//
-//.iAm-text {
-//    width: 152px;
-//    height: 63px;
-//    transform: rotate(-90deg);
-//
-//
-//
-//
-//
-//        @media (max-width:$breakpointTablet) {
-//            font-size: 29px;
-//        }
-//    }
-//
-//    @media (max-width:$breakpointTablet) {
-//        width: 72px;
-//        height: 33px;
-//    }
-//}
-//
-//.frame2 {
-//    width: 620px;
-//    height: 172px;
-//    flex-direction: column;
-//    display: flex;
-//    align-items: center;
-//    justify-content: center;
-//
-//    @media (max-width:$breakpointTablet) {
-//        width: 310px;
-//        height: 89px;
-//    }
-//}
-//
-//
-//
-//    @media (max-width:$breakpointTablet) {
-//        width: 310px;
-//        height: 54px;
-//        font-size: 45px;
-//    }
-//}
-//
-//
-//
-//    @media (max-width:$breakpointTablet) {
-//        width: 310px;
-//        height: 35px;
-//        font-size: 28px;
-//    }
-//}
-//
-//.button-contain {
-//
-//}
-//
-//.button-header {
-//    width: 165px;
-//    height: 58px;
-//    border-radius: 10px;
-//    display: flex;
-//    gap: 10px;
-//    padding: 15px 30px 15px 30px;
-//    background-color: #00BEE8 !important;
-//
-//    span {
-//        font-size: 20px;
-//        font-weight: 400;
-//        line-height: 1.75em;
-//        letter-spacing: 0em;
-//        text-align: left;
-//        color: #FFFFFF;
-//
-//        @media (max-width:$breakpointTablet) {
-//            width: 73px;
-//            height: 19px;
-//            font-size: 16px;
-//        }
-//    }
-//
-//    &:hover {
-//        cursor: pointer;
-//        width: 190px;
-//        height: 70px;
-//        background-color: #4B47FF !important;
-//
-//        @media (max-width:$breakpointTablet) {
-//            width: 170px;
-//            height: 60px;
-//        }
-//    }
-//}
-//
-//.vector-refenz {
-//    @media (max-width:$breakpointTablet) {
-//        width: 20%;
-//    }
-//
-//    img {
-//        @media (max-width:$breakpointTablet) {
-//            width: 100%;
-//        }
-//    }
-//}
-//
-//.referenz-contain {
-//    width: 100vw;
-//    max-width: 100%;
-//    height: 250px;
-//    display: flex;
-//    align-items: center;
-//    justify-content: space-between;
-//    padding-top: 20px;
-//
-//    @media (max-width:$breakpointTablet) {
-//        bottom: 0;
-//        position: relative;
-//        height: 15vh;
-//    }
-//}
-//
-//.referenz {
-//    width: 620px;
-//    height: 40px;
-//    display: flex;
-//    align-items: center;
-//    justify-content: flex-start;
-//    gap: 42px;
-//
-//    @media (max-width:$breakpointTablet) {
-//        width: 100%;
-//        gap: 7px;
-//    }
-//}
-//
-//.icon-referenz {
-//    width: 210px;
-//    height: 29.26px;
-//    display: flex;
-//    align-items: center;
-//    justify-content: center;
-//    gap: 42px;
-//
-//    a {
-//        display: flex;
-//        align-items: center;
-//        justify-content: center;
-//    }
-//
-//    img:hover {
-//        width: 41.01px;
-//        height: 40px;
-//        cursor: pointer;
-//    }
-//}
-//
-//.email-referenz {
-//    width: 248px;
-//    height: 28px;
-//
-//
-//    &:hover {
-//        cursor: pointer;
-//    }
-//
-//    @media(max-width:$breakpointTablet) {
-//        display: none;
-//    }
-//}
-//
-//.scroll-text {
-//    display: flex;
-//    align-items: center;
-//    justify-content: center;
-//    flex-direction: column;
-//    width: 60px;
-//    height: 248px;
-//    gap: 80px;
-//    margin-right: 100px;
-//    z-index: 1;
-//
-//    span {
-//
-//    }
-//
-//    img {
-//        width: 24px;
-//        height: 24px;
-//    }
-//
-//    @media (max-width:$breakpointTablet) {
-//        display: none;
-//    }
-//}
-//
-//@media (min-width: 1001px) and (max-width: 1350px) {
-//    .iAm-text {
-//        width: 122px;
-//        height: 63px;
-//
-//        span {
-//            font-size: 51px;
-//        }
-//    }
-//
-//    .frame2 {
-//        width: 513px;
-//        height: 161px;
-//    }
-//
-//    .name-contain {
-//        width: 509px;
-//        height: 93px;
-//        font-size: 71px;
-//    }
-//
-//    .frontend-contain {
-//        width: 509px;
-//        height: 55px;
-//        font-size: 45px;
-//    }
-//}

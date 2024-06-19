@@ -7,6 +7,7 @@ section {
     max-width: 100%;
     background-color: #141d2f;
     border-top: 4px solid #00bee8;
+    padding-bottom: 109px;
 }
 
 .footer-contain {
@@ -104,7 +105,6 @@ section {
 
 .icon-contain {
     width: 200px;
-    //height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,8 +122,7 @@ section {
 
         &:hover {
             cursor: pointer;
-            width: 45px;
-            height: 45px;
+            transform: scale(1.5);
         }
     }
 }

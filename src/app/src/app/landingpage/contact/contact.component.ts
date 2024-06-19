@@ -1,11 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
-import { FormsModule, NgForm, NgModel } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
-import { MatSnackBar } from '@angular/material/snack-bar';
 import { DialogEmailSentComponent } from '../dialog-email-sent/dialog-email-sent.component';
 import { MatDialog } from '@angular/material/dialog';
 import { TranslateModule } from '@ngx-translate/core';
@@ -30,7 +29,6 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class ContactComponent {
   constructor(
-    private snackBar: MatSnackBar,
     public dialog: MatDialog,
   ) { }
   http = inject(HttpClient)
@@ -73,7 +71,14 @@ export class ContactComponent {
     }
   }
 
+  /**
+   * The function calls up a dialogue after the email has been sent.
+   */
   openDialog() {
-    this.dialog.open(DialogEmailSentComponent);
+    const dialogRef = this.dialog.open(DialogEmailSentComponent);
+
+    setTimeout(() => {
+      dialogRef.close();
+    }, 2000);
   }
 }

@@ -11,6 +11,7 @@ import {
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-dialog-email-sent',
@@ -24,6 +25,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatDialogClose,
     MatDialogContent,
     MatDialogTitle,
+    TranslateModule
   ],
   templateUrl: './dialog-email-sent.component.html',
   styleUrl: './dialog-email-sent.component.scss'
@@ -36,6 +38,9 @@ export class DialogEmailSentComponent {
 
   }
 
+  /**
+   * Close the Dialog
+   */
   onNoClick(): void {
     this.dialogRef.close();
   }

@@ -1,6 +1,21 @@
 @import "./../../../../../font.style.scss";
 @import "./../../../../../mixin.style.scss";
 
+.fixed{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    transition: top 0.3s ease-out, height 0.3s ease-out;
+    z-index: 999;
+    will-change: top, height;
+}
+
+.nofixed{
+    position: static;
+    top: -50px;
+}
+
+
 .navbar {
     width: 100vw;
     max-width: 100%;
@@ -40,6 +55,7 @@
         height: 70px;
         gap: 14px;
         justify-content: center;
+        cursor: pointer;
 
         .material-icons {
             color: #ffffff;
@@ -114,13 +130,12 @@
             animation-duration: 200ms;
             color: #00bee8;
             border-bottom: 4px solid #4b47ff;
-            
         }
     }
 
     .buttonLanguage {
         border: none;
         background-color: #141d2f;
-        color: #ffffff;;
+        color: #ffffff;
     }
 }

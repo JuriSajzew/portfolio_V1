@@ -25,7 +25,7 @@
             <form class="form-contain" #form="ngForm" #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
                 <div class="textarea-contain">
                     <input #name="ngModel" minlength="3" [(ngModel)]="contactData.name" id="contactName" class="frame50"
-                        name="name" placeholder="Your name" type="text" required>
+                        name="name" placeholder="{{'contact.placeholderName' | translate}}" type="text" required>
                     <div style="width: 100%;height: 20px;">
                         <span *ngIf="!name.valid && name.touched" ngClass="warnText">{{'contact.warnText'
                             |translate}}</span>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="textarea-contain">
                     <input #email="ngModel" [(ngModel)]="contactData.email" id="contactEmail" class="frame50"
-                        name="email" placeholder="Your email" type="email" required
+                        name="email" placeholder="{{'contact.placeholderEmail' | translate}}" type="email" required
                         pattern="^(http(s){0,1}:\/\/.){0,1}[\-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([\-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$">
                     <div style="width: 100%;height: 20px;">
                         <span *ngIf="!email.valid && email.touched" ngClass="warnText">{{'contact.warnText2'
@@ -42,7 +42,7 @@
                 </div>
                 <div class="textarea-contain">
                     <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" class="frame51"
-                        name="message" placeholder="Your message" type="message" required></textarea>
+                        name="message" placeholder="{{'contact.placeholderMessage' | translate}}" type="message" required></textarea>
                     <div style=" width: 100%; height: 20px;">
                         <span *ngIf="!message.valid && message.touched" ngClass="warnText">{{'contact.warnText3'
                             |translate}}</span>
@@ -55,7 +55,7 @@
                                 class="checkbox" name="checkbox" required>
                         </div>
                         <span>{{'contact.privacyText1' | translate}}
-                            <a href="">{{'contact.privacyPolice' | translate}}</a>
+                            <a href="privacy_policy">{{'contact.privacyPolice' | translate}}</a>
                             {{'contact.privacyText2' | translate}}
                         </span>
                     </div>
@@ -78,8 +78,4 @@
             <img src="assets/img/go_up_button.png" alt="">
         </a>
     </div>
-
-    <!--<div class="vector-contain-footer">
-        <img src="./../../../../../assets/shadow/contact_footer_vector.svg" alt="">
-    </div>-->
 </section>

@@ -55,12 +55,13 @@ section {
     }
 
     h2 {
-        font-size: 90px;
+        font-size: 70px;
         font-weight: 700;
         line-height: 108px;
         letter-spacing: 0em;
         text-align: center;
         color: #ffffff;
+        font-family: 'Poppins';
 
         @media (max-width: $breakpointTablet) {
             font-size: 45px;
@@ -225,7 +226,7 @@ section {
     }
 
     &::placeholder {
-        width: 88px;
+        
         height: 19px;
         color: #ffffff;
         font-size: 16px;
@@ -245,7 +246,7 @@ section {
     }
 }
 
-input:focus {
+input:focus, textarea:focus {
     outline: none;
 }
 

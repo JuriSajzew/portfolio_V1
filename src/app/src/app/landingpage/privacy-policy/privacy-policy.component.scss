@@ -1,0 +1,13 @@
+@import "./../../../../../font.style.scss";
+@import "./../../../../../mixin.style.scss";
+@import "./../../../../../styles.scss";
+
+.privacy {
+    padding: 100px;
+    color: white;
+    word-wrap: break-word;
+
+    @media (min-width: 299px) and (max-width: 1000px) {
+        padding: 20px;
+    }
+}
