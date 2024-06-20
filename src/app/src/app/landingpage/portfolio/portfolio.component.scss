@@ -7,6 +7,7 @@ section {
     max-width: 100%;
     overflow: hidden;
     padding-bottom: 30px;
+    padding-top: 120px;
 }
 
 .flex-row-reverse {
@@ -16,7 +17,8 @@ section {
 
 .heading-contain {
     width: 100vw;
-    max-width: 100%;
+    max-width: 1920px;
+    margin: auto;
     height: 248px;
     display: flex;
     align-items: flex-end;
@@ -32,7 +34,8 @@ section {
     width: 100%;
 
     @media (max-width: $breakpointTablet) {
-        width: 340px;
+        width: 90%;
+        z-index: 1;
         gap: 20px;
     }
 }
@@ -114,7 +117,8 @@ section {
 
 .portfolio-contain {
     width: 100vw;
-    max-width: 100%;
+    max-width: 1920px;
+    margin: auto;
     margin-top: 5%;
     display: flex;
     flex-direction: column;
@@ -134,7 +138,13 @@ section {
     justify-content: center;
     gap: 35px;
 
-    @media (max-width: $breakpointTablet) {
+    @media (min-width: 1001px) and (max-width: 1200px) {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media (min-width: 299px) and (max-width: 1000px) {
         flex-direction: column;
         width: 100%;
     }
@@ -147,7 +157,7 @@ section {
     justify-content: center;
 
     @media (max-width: $breakpointTablet) {
-        width: 100%;
+        width: 90%;
     }
 
     img {
@@ -180,6 +190,10 @@ section {
     flex-direction: column;
     row-gap: 15px;
 
+    @media (min-width: 1001px) and (max-width: 1524px) {
+        padding-left: 30px;
+    }
+
     @media (max-width: $breakpointTablet) {
         align-items: center;
         justify-content: center;
@@ -198,7 +212,6 @@ section {
 
         @media (max-width: $breakpointTablet) {
             text-align: center;
-
         }
     }
 
@@ -233,18 +246,20 @@ section {
             text-align: center;
             width: 90%;
             margin-bottom: 30px;
-           // height: 76px;
         }
     }
 }
 
 .button-contain {
     width: 100%;
-    //height: 66px;
     display: flex;
     gap: 86px;
     align-items: center;
     justify-content: flex-start;
+
+    @media (min-width: 1001px) and (max-width: 1524px) {
+        padding-left: 30px;
+    }
 
     @media (max-width: $breakpointTablet) {
         justify-content: center;

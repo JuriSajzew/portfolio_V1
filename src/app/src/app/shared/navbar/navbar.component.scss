@@ -1,24 +1,12 @@
 @import "./../../../../../font.style.scss";
 @import "./../../../../../mixin.style.scss";
 
-.fixed{
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    transition: top 0.3s ease-out, height 0.3s ease-out;
-    z-index: 999;
-    will-change: top, height;
-}
-
-.nofixed{
-    position: static;
-    top: -50px;
-}
-
-
 .navbar {
+    position: fixed;
+    z-index: 1000;
     width: 100vw;
-    max-width: 100%;
+    max-width: 1920px;
+    margin: auto;
     background-color: #141d2f;
     display: flex;
     align-items: center;
@@ -42,6 +30,174 @@
     img {
         width: 150px;
         height: 57px;
+    }
+}
+
+/* <reset-style> ============================ */
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+/* ============================ */
+/* <style for bg> ======== */
+.background {
+    display: none;
+    @media (max-width: $breakpointMobile) {
+        //border-radius: 16px;
+        //border: 1px solid #1a1a1a;
+        //background: rgba(74, 74, 74, 0.39);
+        mix-blend-mode: luminosity;
+        //box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(15px);
+        width: 65px;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    /* <style for menu__icon> ======== */
+    .menu__icon {
+        width: 32px;
+        height: 32px;
+        padding: 4px;
+    }
+
+    .menu__icon span {
+        display: block;
+        width: 100%;
+        height: 0.125rem;
+        border-radius: 2px;
+        background-color: rgb(0, 122, 255);
+        box-shadow: 0 0.5px 2px 0 hsla(0, 0%, 0%, 0.2);
+        transition: background-color 0.4s;
+        position: relative;
+    }
+
+    .menu__icon span + span {
+        margin-top: 0.375rem;
+    }
+
+    .menu__icon span:nth-child(1) {
+        animation: ease 0.8s menu-icon-top-2 forwards;
+    }
+
+    .menu__icon span:nth-child(2) {
+        animation: ease 0.8s menu-icon-scaled-2 forwards;
+    }
+
+    .menu__icon span:nth-child(3) {
+        animation: ease 0.8s menu-icon-bottom-2 forwards;
+    }
+
+    .menu__icon:hover span:nth-child(1) {
+        animation: ease 0.8s menu-icon-top forwards;
+    }
+
+    .menu__icon:hover span:nth-child(2) {
+        animation: ease 0.8s menu-icon-scaled forwards;
+    }
+
+    .menu__icon:hover span:nth-child(3) {
+        animation: ease 0.8s menu-icon-bottom forwards;
+        background-color: rgb(255, 59, 48);
+    }
+
+    @keyframes menu-icon-top {
+        0% {
+            top: 0;
+            transform: rotate(0);
+        }
+
+        50% {
+            top: 0.5rem;
+            transform: rotate(0);
+        }
+
+        100% {
+            top: 0.5rem;
+            transform: rotate(45deg);
+        }
+    }
+
+    @keyframes menu-icon-top-2 {
+        0% {
+            top: 0.5rem;
+            transform: rotate(45deg);
+        }
+
+        50% {
+            top: 0.5rem;
+            transform: rotate(0);
+        }
+
+        100% {
+            top: 0;
+            transform: rotate(0);
+        }
+    }
+
+    @keyframes menu-icon-bottom {
+        0% {
+            bottom: 0;
+            transform: rotate(0);
+        }
+
+        50% {
+            bottom: 0.5rem;
+            transform: rotate(0);
+        }
+
+        100% {
+            bottom: 0.5rem;
+            transform: rotate(135deg);
+        }
+    }
+
+    @keyframes menu-icon-bottom-2 {
+        0% {
+            bottom: 0.5rem;
+            transform: rotate(135deg);
+        }
+
+        50% {
+            bottom: 0.5rem;
+            transform: rotate(0);
+        }
+
+        100% {
+            bottom: 0;
+            transform: rotate(0);
+        }
+    }
+
+    @keyframes menu-icon-scaled {
+        50% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(0);
+        }
+    }
+
+    @keyframes menu-icon-scaled-2 {
+        0% {
+            transform: scale(0);
+        }
+
+        50% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
     }
 }
 
@@ -102,7 +258,7 @@
         &.is-open {
             display: flex;
             position: absolute;
-            top: 100px;
+            top: 64px;
             left: 0;
             width: 100%;
             height: 100vh;
@@ -124,6 +280,8 @@
 
     .language-contain {
         border-bottom: 4px solid #141d2f;
+        display: flex;
+        column-gap: 10px;
         :hover {
             cursor: pointer;
             animation-timing-function: linear;

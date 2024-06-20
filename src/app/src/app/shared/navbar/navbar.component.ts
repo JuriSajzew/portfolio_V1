@@ -1,7 +1,6 @@
 import { Component, HostListener, OnInit, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
-import { BurgerMenuComponent } from '../../landingpage/burger-menu/burger-menu.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { MatSelectModule } from '@angular/material/select';
@@ -14,7 +13,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
   imports: [
     MatMenuModule,
     MatButtonModule,
-    BurgerMenuComponent,
     TranslateModule,
     CommonModule,
     MatFormFieldModule,
@@ -26,8 +24,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 //
 export class NavbarComponent implements OnInit {
-
-  navbarfixed: boolean = false;
 
   languages = ['de', 'en'];
   isMenuOpen = false;
@@ -48,19 +44,15 @@ export class NavbarComponent implements OnInit {
    */
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
+    if (this.isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
   }
 
-  @HostListener('window:scroll', ['$event']) onscroll() {
-    if (window.scrollY > 200) {
-      this.navbarfixed = true;
-      setTimeout(() => {
-        this.navbarfixed = false;
-      }, 2000);
-    }
-    else {
-      setTimeout(() => {
-        this.navbarfixed = false;
-      }, 300);
-    }
+  closeMenu(): void {
+    this.isMenuOpen = false;
+    document.body.style.overflow = '';
   }
 }

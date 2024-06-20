@@ -4,6 +4,11 @@
 section {
     overflow: hidden;
     height: 106vh;
+    padding-top: 120px;
+
+    @media (min-width: 1920px) {
+        height: auto;
+    }
 
     @media (min-width: 290px) and (max-width: 1920px) {
         height: auto;
@@ -12,6 +17,8 @@ section {
 
 .header-contain {
     display: flex;
+    max-width: 1920px;
+    margin: auto;
 
     @media (max-width: 930px) {
         flex-direction: column;
@@ -23,6 +30,10 @@ section {
         align-items: center;
         justify-content: start;
         position: relative;
+
+        @media (min-width: 1920px) {
+            width: auto;
+        }
 
         @media (max-width: 930px) {
             width: 100%;
@@ -42,14 +53,15 @@ section {
         .profile-img {
             position: absolute;
             width: 70%;
-            z-index: 1;
 
             @media (min-width: 401px) and (max-width: 900px) {
                 width: 70%;
+                z-index: 1;
             }
 
             @media (max-width: 400px) {
                 width: 100%;
+                z-index: 1;
             }
         }
     }
@@ -189,6 +201,8 @@ section {
 }
 
 .referenz-contain {
+    max-width: 1920px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     position: relative;

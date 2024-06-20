@@ -1,12 +1,21 @@
+@import "./../../../../../font.style.scss";
+@import "./../../../../../styles.scss";
+
 .impressum {
     width: 100vw;
-    max-width: 100%;
+    max-width: 1920px;
     height: 100vh;
     display: flex;
     padding: 100px;
     flex-direction: column;
     color: #ffffff;
     row-gap: 25px;
+    margin: auto;
+
+    @media (min-width: 220px) and (max-width: 999px) {
+        height: auto;
+        padding: 30px;
+    }
 }
 
 .headline,
@@ -14,6 +23,8 @@
 .representedContain,
 .contactData {
     width: min(100% - 80px, 1240px);
+    display: grid;
+    row-gap: 20px;
 }
 
 .contactData {

@@ -6,6 +6,8 @@
     padding: 100px;
     color: white;
     word-wrap: break-word;
+    max-width: 1920px;
+    margin: auto;
 
     @media (min-width: 299px) and (max-width: 1000px) {
         padding: 20px;

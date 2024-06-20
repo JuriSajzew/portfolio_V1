@@ -5,16 +5,15 @@
 section {
     width: 100vw;
     max-width: 100%;
-    padding-top: 40px;
+    padding-top: 120px;
     padding-bottom: 40px;
 
-    @media (max-width: $breakpointTablet) {
-    }
 }
 
 .about-me-header {
     width: 100vw;
-    max-width: 100%;
+    max-width: 1920px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,6 +23,11 @@ section {
     position: absolute;
     right: 0;
     top: 108%;
+    max-width: 1920px;
+
+    @media (min-width: 1920px) {
+        display: none;
+    }
 
     @media (min-width: 1101px) and (max-width: 1900px) {
         top: 76vh;
@@ -47,6 +51,10 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: 1001px) and (max-width: 1524px) {
+        padding-left: 100px;
+    }
 
     @media (max-width: $breakpointTablet) {
         width: 100%;
@@ -172,8 +180,21 @@ section {
     overflow: hidden;
     border-radius: 50%;
 
+    @media (min-width: 1001px) and (max-width: 1524px) {
+        height: 330px;
+    }
+
     img {
         width: 406px;
         height: 406px;
+
+        @media (min-width: 1001px) and (max-width: 1524px) {
+            height: 330px;
+        }
+    }
+}
+.vector-profile-contain {
+    @media (min-width: 1001px) and (max-width: 1524px) {
+        width: 60%;
     }
 }

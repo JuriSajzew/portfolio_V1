@@ -1,15 +1,20 @@
 <section>
-    <nav class="navbar" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
+    <nav class="navbar">
         <div class="logo-contain">
             <img src="./../../../../../assets/img/logoSVG.svg" alt="">
         </div>
-        <li class="burger" (click)="toggleMenu()">
-            <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
-        </li>
-        <ul class="nav-menu" [class.is-open]="isMenuOpen" (click)="toggleMenu()">
-            <a href="#aboutMe">{{'navbar.menu1' | translate}}</a>
-            <a href="#mySkills">{{'navbar.menu2' | translate}}</a>
-            <a href="#porfolio">{{'navbar.menu3' | translate}}</a>
+
+        <div class="background" (click)="toggleMenu()">
+            <button class="menu__icon" [ngClass]="isMenuOpen ? 'close' : 'menu' ">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <ul class="nav-menu" [class.is-open]="isMenuOpen">
+            <a href="#aboutMe" (click)="closeMenu()">{{'navbar.menu1' | translate}}</a>
+            <a href="#mySkills" (click)="closeMenu()">{{'navbar.menu2' | translate}}</a>
+            <a href="#porfolio" (click)="closeMenu()">{{'navbar.menu3' | translate}}</a>
 
             <div class="language-contain">
                 <ng-container *ngFor="let language of languages">
@@ -17,6 +22,5 @@
                 </ng-container>
             </div>
         </ul>
-
     </nav>
 </section>

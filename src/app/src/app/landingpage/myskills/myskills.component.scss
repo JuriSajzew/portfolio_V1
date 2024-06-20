@@ -5,7 +5,7 @@
 section {
     width: 100vw;
     max-width: 100%;
-    padding-top: 50px;
+    padding-top: 120px;
     padding-bottom: 50px;
 }
 
@@ -13,9 +13,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1920px;
+    margin: auto;
 
     @media (max-width: $breakpointTablet) {
         flex-direction: column-reverse;
+        z-index: 1;
+    position: relative;
     }
 }
 
@@ -29,6 +33,10 @@ section {
     row-gap: 5vh;
     column-gap: 9vw;
     padding: 50px 100px;
+
+    @media (min-width:1920px) {
+        width: auto;
+    }
 
     @media (max-width: $breakpointTablet) {
         width: 100%;
@@ -176,7 +184,7 @@ section {
         color: #ffffff;
 
         @media (max-width: $breakpointTablet) {
-            width: 338px;
+            width: 90%;
             line-height: 16px;
         }
     }
@@ -238,7 +246,6 @@ section {
 
     &:hover {
         cursor: pointer;
-
         background-color: #4b47ff !important;
     }
 }
@@ -246,6 +253,11 @@ section {
 .vector-left {
     position: absolute;
     left: 0;
+
+    @media (min-width:1920px) {
+        display: none;
+    
+    }
 
     @media (min-width:1000px) and (max-width: 2000px) {
         top: 217vh;
@@ -310,7 +322,6 @@ section {
 
     &:hover {
         @media (max-width: $breakpointTablet) {
-            width: 162px;
             cursor: pointer;
             background-color: #4b47ff !important;
         }
