@@ -1,49 +1,52 @@
 <section>
-    <div class="header-contain">
-        <div class="profile-contain">
-            <img class="profile-shadow" src="./../../../../../assets/shadow/hero_character_shadow.svg"
-                alt="Profile Shadow">
-            <img class="profile-img" src="./../../../../../assets/img/profileImage.png" alt="Profile Image">
-        </div>
+    <div class="conatin-header">
+        <div class="header-contain">
+            <div class="profile-contain">
+                <img class="profile-shadow" src="./../../../../../assets/shadow/hero_character_shadow.svg"
+                    alt="Profile Shadow">
+                <img class="profile-img" src="./../../../../../assets/img/profileImage.png" alt="Profile Image">
+            </div>
 
-        <div class="text-contain">
-            <div class="frame3">
-                <div class="iAm-text">
-                    <span>{{'header.iAm' | translate}}</span>
+            <div class="text-contain">
+                <div class="frame3">
+                    <div class="iAm-text">
+                        <span>{{'header.iAm' | translate}}</span>
+                    </div>
+                    <div class="frame2">
+                        <span class="name-contain">Juri Sajzew</span>
+                        <span class="frontend-contain">{{'header.fd' | translate}}</span>
+                    </div>
                 </div>
-                <div class="frame2">
-                    <span class="name-contain">Juri Sajzew</span>
-                    <span class="frontend-contain">{{'header.fd' | translate}}</span>
+                <div class="button-contain">
+                    <a href="#contact"><button mat-raised-button [ngClass]="colorClass" class="button-header"
+                            (mouseenter)="changeStyle($event)" (mouseleave)="changeStyle($event)">
+                            <span>{{'header.button' | translate}}</span>
+                        </button>
+                    </a>
                 </div>
-            </div>
-            <div class="button-contain">
-                <a href="#contact"><button mat-raised-button [ngClass]="colorClass" class="button-header"
-                        (mouseenter)="changeStyle($event)" (mouseleave)="changeStyle($event)">
-                        <span>{{'header.button' | translate}}</span>
-                    </button>
-                </a>
             </div>
         </div>
-    </div>
-    <div class="referenz-contain">
-        <img class="vector-header" src="./../../../../../assets/shadow/vector-header.svg" alt="">
-        <div class="referenz">
-            <div class="vector-referenz">
-                <img src="./../../../../../assets/shadow/referenz-vector.svg" alt="">
+        <img class="test" src="./../../../../../assets/shadow/vector-header.svg" alt="">
+        <div class="referenz-contain">
+            <img class="vector-header" src="./../../../../../assets/shadow/vector-header.svg" alt="">
+            <div class="referenz">
+                <div class="vector-referenz">
+                    <img src="./../../../../../assets/shadow/referenz-vector.svg" alt="">
+                </div>
+                <div class="icon-referenz">
+                    <img src="./../../../../../assets/shadow/Github button.svg" alt="" (click)="openGithub()">
+                    <a href="mailto:j.sajzew@outlook.de"><img src="./../../../../../assets/shadow/Email button.svg"
+                            alt=""></a>
+                    <img src="./../../../../../assets/shadow/Linkedin button.svg" alt="" (click)="openLinkedIn()">
+                </div>
+                <div class="email-referenz">
+                    info&#64;juridev.de
+                </div>
             </div>
-            <div class="icon-referenz">
-                <img src="./../../../../../assets/shadow/Github button.svg" alt="" (click)="openGithub()">
-                <a href="mailto:j.sajzew@outlook.de"><img src="./../../../../../assets/shadow/Email button.svg"
-                        alt=""></a>
-                <img src="./../../../../../assets/shadow/Linkedin button.svg" alt="" (click)="openLinkedIn()">
+            <div class="scroll-text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <span>Scroll down</span>
+                <img src="./../../../../../assets/shadow/down_vector.svg" alt="">
             </div>
-            <div class="email-referenz">
-                j.sajzew&#64;outlook.de
-            </div>
-        </div>
-        <div class="scroll-text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-            <span>Scroll down</span>
-            <img src="./../../../../../assets/shadow/down_vector.svg" alt="">
         </div>
     </div>
 </section>

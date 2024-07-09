@@ -5,17 +5,26 @@
     position: fixed;
     z-index: 1000;
     width: 100vw;
-    max-width: 1920px;
+    max-width: 100%;
     margin: auto;
     background-color: #141d2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBar-contain {
+    width: 100%;
+    max-width: 1920px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 37px 100px 37px 100px;
 
-    @media (max-width: $breakpointMobile) {
+    @media (max-width: 1000px) {
         padding: 37px 25px 37px 25px;
         height: 43px;
+        left: 0;
     }
 }
 

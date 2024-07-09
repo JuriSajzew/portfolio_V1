@@ -15,6 +15,40 @@ section {
     }
 }
 
+.test {
+    display: none;
+    @media (min-width: 1921px) {
+        display: block;
+        width: 100vw;
+        max-width: 100%;
+        position: absolute;
+        //top: -397px;
+    }
+
+    @media (min-width: 1922px) and (max-width: 2023px) {
+        top: 6%;
+    }
+
+    @media (min-width: 2023px) and (max-width: 2400px) {
+        top: -2%;
+    }
+    @media (min-width: 2401px) and (max-width: 2607px) {
+        top: -5%;
+    }
+
+    @media (min-width: 2607px) and (max-width: 3000px) {
+        top: -10%;
+    }
+
+    @media (min-width: 3001px) and (max-width: 3499px) {
+        top: -18%;
+    }
+
+    @media (min-width: 3500px) and (max-width: 3751px) {
+        top: -25%;
+    }
+}
+
 .header-contain {
     display: flex;
     max-width: 1920px;
@@ -203,8 +237,8 @@ section {
 .referenz-contain {
     max-width: 1920px;
     margin: auto;
-    display: flex;
     justify-content: space-between;
+    display: flex;
     position: relative;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -213,6 +247,14 @@ section {
         position: absolute;
         width: 100%;
         margin-top: -33%;
+
+        @media (min-width: 1920px) {
+            display: none;
+        }
+
+        @media (max-width: 1920px) {
+            display: flex;
+        }
 
         @media (min-width: 660px) and (max-width: 930px) {
             margin-top: -80%;

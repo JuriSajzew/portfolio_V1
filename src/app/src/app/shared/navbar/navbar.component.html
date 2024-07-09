@@ -1,26 +1,29 @@
 <section>
     <nav class="navbar">
-        <div class="logo-contain">
-            <img src="./../../../../../assets/img/logoSVG.svg" alt="">
-        </div>
-
-        <div class="background" (click)="toggleMenu()">
-            <button class="menu__icon" [ngClass]="isMenuOpen ? 'close' : 'menu' ">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-        <ul class="nav-menu" [class.is-open]="isMenuOpen">
-            <a href="#aboutMe" (click)="closeMenu()">{{'navbar.menu1' | translate}}</a>
-            <a href="#mySkills" (click)="closeMenu()">{{'navbar.menu2' | translate}}</a>
-            <a href="#porfolio" (click)="closeMenu()">{{'navbar.menu3' | translate}}</a>
-
-            <div class="language-contain">
-                <ng-container *ngFor="let language of languages">
-                    <button (click)="changeLanguage(language)" class="buttonLanguage">{{ language | translate}}</button>
-                </ng-container>
+        <div class="navBar-contain">
+            <div class="logo-contain">
+                <img src="./../../../../../assets/img/logoSVG.svg" alt="">
             </div>
-        </ul>
+
+            <div class="background" (click)="toggleMenu()">
+                <button class="menu__icon" [ngClass]="isMenuOpen ? 'close' : 'menu' ">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <ul class="nav-menu" [class.is-open]="isMenuOpen">
+                <a href="#aboutMe" (click)="closeMenu()">{{'navbar.menu1' | translate}}</a>
+                <a href="#mySkills" (click)="closeMenu()">{{'navbar.menu2' | translate}}</a>
+                <a href="#porfolio" (click)="closeMenu()">{{'navbar.menu3' | translate}}</a>
+
+                <div class="language-contain">
+                    <ng-container *ngFor="let language of languages">
+                        <button (click)="changeLanguage(language)" class="buttonLanguage">{{ language |
+                            translate}}</button>
+                    </ng-container>
+                </div>
+            </ul>
+        </div>
     </nav>
 </section>

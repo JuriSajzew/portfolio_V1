@@ -8,14 +8,14 @@
     "header": {
         "language": "English",
         "iAm": "I am",
-        "fd": "Frondend Developer",
+        "fd": "Frontend Developer",
         "button": "Lets`s talk!"
     },
     "aboutMe": {
         "language": "English",
         "aboutMe": "About me",
         "aboutMe1": "Hi, I'm a front-end developer from Stuttgart. In my previous job as a logistics manager, I often came into contact with programming. I have always been fascinated by the technology and logic behind a user interface. My goal is to develop innovative solutions that exceed customer expectations while having a positive impact on users. ",
-        "aboutMe2": "During my training at Delevolper Academy, I created several projects. This allowed me to expand my knowledge of HTML, CSS, JavaScript, Angular and TypeScript. Some projects had to be carried out in a team, which I really enjoyed.",
+        "aboutMe2": "During my training at the Developer Akademie, I created several projects. This allowed me to expand my knowledge of HTML, CSS, JavaScript, Angular and TypeScript. Some projects had to be carried out in a team, which I really enjoyed.",
         "aboutMe3": "In my free time, I like to explore design trends and experiment with new techniques. I also work with new technologies to constantly expand my knowledge. "
     },
     "skills": {
@@ -34,14 +34,14 @@
             "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
         },
         {
-            "description": "A simple jump-and-run game based on an object-oriented approach. Help Pepe find coins and salsa bottles to fight against the giant chicken."
+            "description": "A simple jump-and-run game based on an object-orientated approach. Help Pepe find coins and salsa bottles to fight against the giant chicken."
         }
     ],
     "contact": {
         "language": "English",
         "contact": "Contact",
         "contact1": "Got a problem to solve?",
-        "contact2": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+        "contact2": "Contact me using this form. I am interested in hearing from you, learning about your ideas and contributing to your projects with my work.",
         "contact3": "Need a Frontend developer?",
         "contact4": " Contact me!",
         "warnText": "Please enter a name",
