@@ -21,7 +21,7 @@ export class PortfolioComponent {
   ];
 
   framework: string[] = [
-    'Angular | Typescript | HTML | CSS | Firebase',
+    'HTML | CSS | JavaScript',
     'JavaScript | HTML | CSS'
   ];
 
