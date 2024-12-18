@@ -20,7 +20,14 @@ export class MyskillsComponent {
     'assets/shadow/css.svg',
     'assets/shadow/rest_api.svg',
     'assets/shadow/scrum.svg',
-    'assets/shadow/material_design.svg'
+    'assets/shadow/material_design.svg',
+    'assets/img/python.svg',
+    'assets/img/django.svg',
+    'assets/img/postgresql.svg',
+    'assets/img/redis.svg',
+    'assets/img/databaseDbIcon.svg',
+    'assets/img/linux.svg',
+
   ];
 
   skillsText: string[] = [
@@ -33,6 +40,12 @@ export class MyskillsComponent {
     'CSS',
     'Rest-Api',
     'Scrum',
-    'Material design'
+    'Material design',
+    'Python',
+    'Django',
+    'PostgreSQL',
+    'Redis',
+    'SQL',
+    'Linux',   
   ]
 }

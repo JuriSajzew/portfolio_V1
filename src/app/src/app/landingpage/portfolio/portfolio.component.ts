@@ -13,33 +13,46 @@ export class PortfolioComponent {
   projectImg: string[] = [
     'assets/img/join.png',
     'assets/img/El_Pollo_loco.png',
+    'assets/img/videoflix.png',
   ];
 
   projectName: string[] = [
     'Join',
-    'El Pollo Loco'
+    'El Pollo Loco',
+    'Videoflix',
   ];
 
   framework: string[] = [
     'HTML | CSS | JavaScript',
-    'JavaScript | HTML | CSS'
+    'JavaScript | HTML | CSS',
+    'Angular | Django',
   ];
 
   liveUrls: string[] = [
     'https://join.juridev.de',
-    'https://el-pollo-loco.juridev.de'
+    'https://el-pollo-loco.juridev.de',
+    'https://videoflix.juridev.de'
   ];
 
-  githubUrls: string[] = [
+  githubFrontendUrls: string[] = [
     'https://github.com/JuriSajzew/Join_Project',
-    'https://github.com/JuriSajzew/El_pollo_loco'
+    'https://github.com/JuriSajzew/El_pollo_loco',
+    'https://github.com/JuriSajzew/videoflix_frontend'
+  ];
+
+  githubBackendUrls: string[] = [
+    '',
+    '',
+    'https://github.com/JuriSajzew/videoflix_backend'
   ];
 
   redirectToUrl(type: string, index: number) {
     if (type === 'live') {
       window.open(this.liveUrls[index], '_blank');
     } else if (type === 'github') {
-      window.open(this.githubUrls[index], '_blank');
+      window.open(this.githubFrontendUrls[index], '_blank');
+    } else if (type === 'githubBackend') {
+      window.open(this.githubBackendUrls[index], '_blank');
     }
   }
 }

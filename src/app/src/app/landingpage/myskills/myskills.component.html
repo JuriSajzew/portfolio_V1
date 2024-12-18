@@ -10,7 +10,7 @@
         <div class="skills-img-contain">
             <div class="skillsImg-contain" *ngFor="let element of mySkillsImg; let i = index">
                 <div class="skills-image">
-                    <img [src]="element" alt="">
+                    <img [src]="element" [ngStyle]="{'invert': element.includes('shadow')}" alt="">
                 </div>
                 <div class="skills-text">
                     <span>{{skillsText[i]}}</span>

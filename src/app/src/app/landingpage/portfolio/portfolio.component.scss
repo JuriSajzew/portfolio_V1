@@ -253,9 +253,28 @@ section {
 .button-contain {
     width: 100%;
     display: flex;
-    gap: 86px;
+    column-gap: 86px;
     align-items: center;
     justify-content: flex-start;
+
+    @media (min-width: 1001px) and (max-width: 1524px) {
+        padding-left: 30px;
+    }
+
+    @media (max-width: $breakpointTablet) {
+        justify-content: center;
+        gap: 46px;
+    }
+}
+
+.custom-design {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 86px;
+    row-gap: 20px;
 
     @media (min-width: 1001px) and (max-width: 1524px) {
         padding-left: 30px;
@@ -331,6 +350,40 @@ section {
 
     @media (min-width: 290px) and (max-width: 400px) {
         width: 112px;
+        span {
+            font-size: 16px;
+        }
+    }
+}
+
+.button3 {
+    width: 380px;
+    border-radius: 10px;
+    border: 1px solid #00bee8;
+    background-color: #141d2f;
+    padding: 15px 30px 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    span {
+        font-family: Poppins;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ffffff;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: #00bee8;
+    }
+
+    @media (min-width: 290px) and (max-width: 400px) {
+        width: 286px;
         span {
             font-size: 16px;
         }

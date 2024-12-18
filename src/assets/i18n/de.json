@@ -35,6 +35,9 @@
         },
         {
             "description": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Salsaflaschen zu finden, um gegen das Riesenhuhn zu kämpfen."
+        },
+        {
+            "description":"Videoflix ist eine Videoplattform zum Anschauen von verschiedenen Videos. Nutzer können sich registrieren und erhalten über eine Authentifizierung Zugang zu den Videos."
         }
     ],
     "contact": {
